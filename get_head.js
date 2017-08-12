@@ -1,7 +1,7 @@
 /*
      用来获取 设置http Head
  */
-var headArray={
+/*var headArray={
 	           //"文件扩展名"     :   "Content-Type(Mime-Type)",
 				".*"       :    "application/octet-stream", //（ 二进制流，不知道下载文件类型）
 				".001"     :    "application/x-001",
@@ -347,18 +347,45 @@ var headArray={
 				".sisx"    :   	"application/vnd.symbian.install",
 				".ipa"     :   	"application/vnd.iphone",
 				".xap"     :   	"application/x-silverlight-app"
-            };
+            };*/
             
+ var headArray={
+ 	      ".html":"text/html",
+ 	      ".htm":"text/html",
+		  ".css": "text/css",
+		  ".gif": "image/gif",
+		  ".html": "text/html",
+		  ".ico": "image/x-icon",
+		  ".jpeg": "image/jpeg",
+		  ".jpg": "image/jpeg",
+		  ".js": "text/javascript",
+		  ".json": "application/json",
+		  ".pdf": "application/pdf",
+		  ".png": "image/png",
+		  ".svg": "image/svg+xml",
+		  ".swf": "application/x-shockwave-flash",
+		  ".tiff": "image/tiff",
+		  ".txt": "text/plain",
+		  ".wav": "audio/x-wav",
+		  ".wma": "audio/x-ms-wma",
+		  ".wmv": "video/x-ms-wmv",
+		  ".xml": "text/xml"
+};      
 var  getContentType=function(url){
-	   var reg=/(\.[a-z,\d]*){1}$/ig ;
-	   var str=url.match(reg);
+	   var reg=/(\..*)$/ig ;
+	   var str=url.search(reg);
+	       if(str!=-1){
+	       	 str=url.slice(str);
+	       }else{
+	       	 str=0;
+	       };
 	   var head=null;
 		      if(str){
 	             var s=headArray[str];     	
 		      	     if(s){
 		      	     	head=s;
 		      	     }else{
-		      	     	head='application/octet-stream';
+//		      	     	head='application/octet-stream';
 		      	     }
 		      };
 	      //console.log("str="+str+' ----   head=='+head)  
