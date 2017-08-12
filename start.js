@@ -5,9 +5,9 @@ var zlib = require('zlib');
 var path=[
           './files/html',
           './files/js',
-          './files/css',
+          // './files/css',
           './files/img',
-          './files/data',
+          // './files/data',
          ];
 var path2=[];         
 var L=path.length;
