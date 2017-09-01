@@ -12,6 +12,7 @@ var startService=function(files){
 				   var pathName=url.pathname.trim().toLowerCase();
 				   var query=url.query;
 				   var p=pathName.split('/').pop();
+				       p?null:p='index.html';
 					   p=files[p];
 					  if(p){ 
 					   var contentType=getHead.getContentType(pathName);	       	    
