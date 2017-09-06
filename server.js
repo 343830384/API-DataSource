@@ -2,7 +2,6 @@
 var http=require('http');
 var _url=require('url');
 var getHead=require('./get_head.js');
-var fs=require('fs');
 var startService=function(files){	
 		var server=http.createServer();  
 			server.listen(80,'0.0.0.0');
