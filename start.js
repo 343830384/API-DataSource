@@ -12,7 +12,7 @@ var path=[
 var path2=[];         
 var L=path.length;
 var allFiles={};
-
+var check ,readS; 
 var readDir=function(path,index){
 	     fs.readdir(path,function(err,files){
 			   if(err)throw err;
@@ -20,7 +20,13 @@ var readDir=function(path,index){
 				       if(i){
 						   while(i--){
 						    if(!index&&!i)flag=true;
-                            readFile(path,files[i],flag);
+							check=files[i].trim().toLowerCase();
+							 if(check.indexOf('.ico')>-1){
+								readS='binary';
+							 }else{
+								readS='utf8';
+							 }
+                            readFile(path,check,flag,readS);
 						  };
 						};		     		  
 		 });
@@ -31,13 +37,18 @@ while(L--){
 	 readDir(path[L],L);
 };
 
-var readFile=function(path,files,flag){
+var readFile=function(path,files,flag,readS){
 	
-			      fs.readFile(path+'/'+files,"binary",function(err, data){
+			      fs.readFile(path+'/'+files,readS,function(err, data){
 			      	var str='';
 					    if(err)throw err;
 				     	str+=data;
-				        allFiles[files.trim().toLowerCase()]=str;
+				        
+					  if(readS=='utf8'){
+						 allFiles[files]=zlib.gzipSync(str);
+					  }else{
+						 allFiles[files]=str;
+					  };
 					    if(flag)server.startService(allFiles);
 			      });
 		  
