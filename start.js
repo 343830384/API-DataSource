@@ -3,10 +3,10 @@ var fs=require('fs');
 var server=require('./server.js');
 var zlib = require('zlib');
 var path=[
-          // './files/html',
-          // './files/js',
+         './files/html',
+          './files/js',
           // './files/css',
-          // './files/img',
+          './files/img',
           // './files/data',
          ];
 var path2=[];         
