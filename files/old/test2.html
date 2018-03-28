@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" >
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta name="viewport"   content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>test222</title>
+    <style>
+      *{
+          margin:0 auto;
+          padding:0;
+      }
+    </style>
+</head>
+<body>
+
+        <div id="app1">
+                <h5>{{title}}</h5>
+                <P>变化值a: {{a}}</P>
+                <div> 
+                    a值变化<input e-input='a'>
+                </div>
+                <P>变化值b: {{b}}</P>
+                <div> 
+                    b值变化<input e-input='b'>
+                </div>
+                <P>变化值c: {{c}}</P>
+                <div> 
+                    b值变化<input e-input='c'>
+                </div>
+                <P>v: {{v}}</P>
+        </div>
+<br>
+
+<div id="app2">
+        <h5>{{title}}</h5>
+        <P>变化值a: {{a}}</P>
+        <P>变化值b: {{b}}</P>
+        <P>变化值c: {{c}}</P>
+        <div> 
+            a值变化<input e-input='c'>
+        </div>
+        <P>变化值v: {{v}}</P>
+        <div> 
+            v值变化<input e-input='v'>
+        </div>
+</div>      
+</body>
+</html>
+<script src="./Eng1.0.js"></script>
+<script src="./mmt.js"></script>
+<script>
+var $_app1=function(){    
+        var app1 = new Eng({
+                el:'app1',
+                id:'app1',
+                data:{
+                    title:'test1 app1',
+                    a:'aa',
+                    b:'bb',
+                    c:'cc',
+                    v:'123'
+                }
+        });
+};
+
+var $_app2=function(){
+        var app2 = new Eng({
+                el:'app2',
+                id:'app2',
+                data:{
+                    title:'test1 app2',
+                    a:'aa2',
+                    b:'bb2',
+                    c:'cc',
+                    v:'vv'
+                }
+        });
+};
+
+var cfg={
+    app1:{
+        
+    },
+    app2:{
+
+    },
+    $_sharedData:{
+        '<=>':['app1'],
+        '=':['app2']   
+        // '<?>':['app2.c=app1.c'],
+        //  '?=':['app2.b=app1.b','app2.a=app1.a'],
+    }
+};
+Eng.init(cfg);
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~
+// $mt(cfg);
+//   Eng.mt(cfg);
+Object.defineProperty
+</script>
