@@ -10,7 +10,8 @@ var noAllow=['jpg','png','ico','gif'];
 var srver= http.createServer(function(req,res){
           var url=decodeURI(req.url);
               url=_url.parse(url);
-          var  pathName=url.pathname;     
+          var  pathName=url.pathname;
+               if(pathName=='/')pathName='/index.html';		  
           var  query=url.query;           
           var  f= pathName.split('/').pop().split('.').pop();  
           var  type=head[f];
