@@ -19,9 +19,9 @@ var srver= http.createServer(function(req,res){
             if(type){
                 if(cache[pathName]){
                       if(noAllow.indexOf(f)>-1){
-                        res.writeHead(200,{'Content-Type':type,'Cache-control':'public,max-age=14400'})
+                        res.writeHead(200,{'Content-Type':type,'Cache-control':'public,max-age=3600'})
                       }else{
-                        res.writeHead(200,{'Content-Type':type,"content-encoding": "gzip",'Cache-control':'public,max-age=14400'});
+                        res.writeHead(200,{'Content-Type':type,"content-encoding": "gzip",'Cache-control':'public,max-age=3600'});
                       };  
                       res.write(cache[pathName]);
                       res.end(); 
@@ -37,7 +37,7 @@ var srver= http.createServer(function(req,res){
                                 res.writeHead(200,{'Content-Type':type});
                               }else{
                                 cache[pathName]=zlib.gzipSync(d);
-                                res.writeHead(200,{'Content-Type':type,"content-encoding": "gzip",'Cache-control':'public,max-age=14400'});
+                                res.writeHead(200,{'Content-Type':type,"content-encoding": "gzip",'Cache-control':'public,max-age=3600'});
                               };
                               res.write(cache[pathName]); 
 
