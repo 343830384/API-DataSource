@@ -5,13 +5,11 @@
     <title>API 首页</title>
     <link rel="shortcut icon" type="image/ico" href="./img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
-    <!-- <script src="./js/Eng1.0基础.js"></script> -->
-    <!-- <script src="./js/eng_0.9.4_min.js"></script> -->
     <script src="./js/eng_1.0.0_min.js"></script>
 </head>
 <body>
-      <div>
-           <img style="height:66px;margin-left:40px" src="./img/favicon.ico" alt="">
+      <div style="height:80px;">
+           <img style="height:66px;margin-left:40px;margin-top:7px;" src="./img/favicon.ico" alt="">
            <div id='top'>
              <a href="https://github.com/343830384/Eng" target="_blank">GitHub</a>  
              <a href="./js/eng_1.0.0_min.js" download="eng_1.0.0_min.js">Download</a>
@@ -592,8 +590,7 @@ var app = new Eng({
 ```
 //封装模板 ,除了命名规则 ($_ 加 id), 其余参数可自行定义
 
-    $_XXXX=function(cfg){                /* $_ 加 XXXX (xxxx与 id 同名) (必须 !! 当前版本为全局函数 ,
-                                            考虑到使用便利性 和 Eng闭包不用担心变量污染 )  */
+    $_XXXX=function(cfg){                /* $_ 加 XXXX (必须 !! 当前版本为全局函数 ,考虑到使用便利性 和 Eng闭包不用担心变量污染 )  */
         var template="";                  //组件html 文本模板  ，可忽略（外部有提供的话）
         var css="";                       //组件 css 样式文本  ，可忽略 （外部有提供的话）
 
@@ -617,14 +614,15 @@ var app = new Eng({
      };
 
 ```
-<a class="des">gitHub 的 demo 中有完整封装使用示例 ， 如果看起来费解的话</a>
+<a class="des"> 审查下方 页面a,b demo源码 ,参考  </a>
 <br>
 ###<a style="color:red" name='107' class="mt60">数据状态共享</a> ：
 <br>
 ```
-// 完整封装配置列表
+// 完整封装配置参考列表 可省略
   var config={
-          app:{
+          app:{     //app 与是封装命名 $_xxx 的xxx部分
+
               el:...  ,       // 页面已有 idName 或 dom对象 ，组件生成后的填充目标
               id：'app',      // id：的app与app应同名 ，注意命名合法性 ， 若不打算使用 relate 组件关联通信 和 数据共享 可忽略
               relate:[],      // 与 app 关联的组件id 列表 ，无需要  可忽略
@@ -664,45 +662,35 @@ var app = new Eng({
 ```
   // a 页面 配置~~~~~~~~~~~~~~~~~~~~~
 
-        new Eng({
-              el:xxx,
-              id:'app',
-              data:{
-                  a:'初始值',
-                  b:'初始值'
-              }
-        });
-
-        var cfg={  
-                $_sharedData:{ 
+        var cfg={
+                app:{
+                    el:document.body,
+                    id:'app',
+                    css:true
+                },
+                $_sharedData:{
                     '<=>':['app']
-               }
-        };   
-        
-        Eng.init(cfg);
+                }
+        };
+        Eng.init(cfg); //使用方式
 
   // b 页面 配置~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-        new Eng({
-              el:xxx,
-              id:'app',
-              data:{
-                  a:'初始值',
-                  b:'初始值'
-              }
-        });
-
         var cfg={
+                app:{
+                    el:document.body,
+                    id:'app',
+                    css:true
+                },
                 $_sharedData:{
                     '<=>':['app']
-               }
-        };   
-        
+                }
+        };
         Eng.init(cfg);
         
 ```
 <a class="des">打开下面的两个页面 ,你会发现 两个页面的数据无论怎么修改 , 组件的数据都是一样的 </a>
-<a class='rred' href="./demo/demo01.html" target="_blank" >页面a</a>
+<a class='rred' href="./demo/demo01.html" target="_blank" >页面a </a>
 <br>
 <a class='rred' href="./demo/demo02.html" target="_blank">页面b</a>
 
@@ -760,7 +748,11 @@ var app = new Eng({
 <a class='rred' href="./demo/demo32.html" target="_blank">页面b</a>
 
 <br>
-###结语：
+###总结：
+<br>
+   * Eng 学习上偏重于理解其逻辑规律 , 运用上偏重于技巧 , 可以实现所有同类工具的页面级操作 . 如果您觉的此部分功能不全 , 请开动你的大脑 
+<br>
+###妄言：
 <br>
 ```
     Eng 是去年7月份左右 , 偶然发兴于网络 , 兴起写的一个纯数据响应插件 , 时以为会有人喜欢 , 然反应寥寥 , 遂搁置不再理会 .  
