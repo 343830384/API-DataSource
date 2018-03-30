@@ -19,9 +19,10 @@ var srver= http.createServer(function(req,res){
             if(type){
                 if(cache[pathName]){
                       if(noAllow.indexOf(f)>-1){
-                        res.writeHead(200,{'Content-Type':type,'Cache-control':'public,max-age=3600'})
+                        res.writeHead(200,{'Content-Type':type,'Cache-control':'public,max-age=113600'})
                       }else{
-                        res.writeHead(200,{'Content-Type':type,"content-encoding": "gzip",'Cache-control':'public,max-age=3600'});
+                        // res.writeHead(200,{'Content-Type':type,"content-encoding": "gzip",'Cache-control':'public,max-age=3600'});
+						res.writeHead(200,{'Content-Type':type,"content-encoding": "gzip",'Cache-control':'no-cache'});
                       };  
                       res.write(cache[pathName]);
                       res.end(); 
@@ -31,13 +32,14 @@ var srver= http.createServer(function(req,res){
                       o['q'+i]=function(k,d,n){
                       
                           if(k=='ok'){
-                            //   res.writeHead(200,{'Content-Type':type,'Cache-control':'public,max-age=14400'});
                               if(noAllow.indexOf(f)>-1){
                                 cache[pathName]=d;
-                                res.writeHead(200,{'Content-Type':type});
+                                // res.writeHead(200,{'Content-Type':type});
+								res.writeHead(200,{'Content-Type':type,'Cache-control':'public,max-age=113600'})
                               }else{
                                 cache[pathName]=zlib.gzipSync(d);
-                                res.writeHead(200,{'Content-Type':type,"content-encoding": "gzip",'Cache-control':'public,max-age=3600'});
+                                // res.writeHead(200,{'Content-Type':type,"content-encoding": "gzip",'Cache-control':'public,max-age=3600'});
+								res.writeHead(200,{'Content-Type':type,"content-encoding": "gzip",'Cache-Control':'no-cache'});
                               };
                               res.write(cache[pathName]); 
 
