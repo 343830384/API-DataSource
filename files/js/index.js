@@ -51,7 +51,7 @@
    
    });
    document.getElementById('left').offsetHeight=document.getElementById('ul').offsetHeight;
-   document.getElementById('right').scrollTop=document.getElementById('ul').scrollTop;
+   document.getElementById('right').offsetHeight=document.getElementById('ul').offsetHeight;
    var  h=listUl.scrollHeight;
         document.getElementById('right').style.height=h+'px';
    
