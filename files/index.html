@@ -465,6 +465,7 @@ Eng 不会自动为这种数据格式做处理，再次强调：这种随性的�
     })
 ```
 <a class="des">watcherFor 可以实现 Excel 的函数运算 ， 如果你想深入了解的话 ， 排序功能 之后的更新增加</a>
+<a class="des2">watcherFor 在对象建立时立即执行数据过滤 , items.$\_watcherFor注册后 ,修改数据时执行 , 或通过 data.array='updata' 触发 </a>
 <a class="des">Array 数据类型 ，进行push() 等等操作数据自身而无法响应的情况时 ，仅需执行  data.arrray = 'update' 即可</a>
 <a class="des">items.$\_allow : &#8195;是否允许允许当前数据通过 ，默认为 true ，当修改为 false 时 该条数据不会渲染到页面 </a>
 <a class="des">items.$\_data  : &#8195;&#8194;当前被循环的数组元素数据</a>
