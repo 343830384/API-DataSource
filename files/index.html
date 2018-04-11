@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>API 首页</title>
     <meta name=”Description” Content="EngJs API ">
-    <meta name="keywords" content="eng,engjs,engjs API,eng api,eng官网" />
+    <meta name="keywords" content="eng,engjs,engjs API,eng api,eng官网,数据驱动,组件化数据渲染" />
     <link rel="shortcut icon" type="image/ico" href="./img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <script src="./js/eng_1.1.0_min.js"></script>
@@ -15,8 +15,7 @@
            <div id='top'>
              <a href="https://github.com/343830384/Eng" target="_blank">GitHub</a>  
              <a href="./js/eng_1.1.0_min.js" download="eng_1.1.0_min.js">Download</a>
-             <a>临时群: 190642775</a>
-             <a>其它计划</a>
+             <a>------ dream-canvas</a>
            </div>
     </div>
    <hr>
@@ -48,7 +47,7 @@
 * Eng 在大多数情况下与后台 99 %解耦 ， 按照 Eng 规则封装的Eng组件 ， 具有一次编写 ， 处处部署的特点 。
 后台仅仅只需配置数据的请求接口 。 在使用本地数据的特殊情况下 ， 后台对前端工作的参与度近乎为 0 ;
 
-* Eng 主要特性：数据多向响应 、组件闭包通信（动态）、 组件群发循环通信 、数据状态共享（跨页面,多向控制）、
+* Eng 主要特性：数据驱动(多向响应) 、组件闭包通信（动态）、 组件群发循环通信 、数据状态共享（跨页面,多向控制）、
 组件require（自动按需加载js，css）、组件自请求数据、支持列表数据过滤 ，用以实现Excel数据统计计算或建立watcher关系、 组件封装方法缓存复用
 
 * Eng 相较于同类工具：  更少更简易的指令/方法实现同样的操作 ， 没有任何组件通信障碍 ， 后台无需专门复杂的路由控制器(1个ID1个接口) ，数据状态共享仅需简短的配置， 组件是完整闭包的全功能独立运作体。
@@ -625,6 +624,7 @@ var app = new Eng({
 <a class="des"> 审查下方 页面a,b demo源码 ,参考  </a>
 <br>
 ###<a style="color:red" name='107' class="mt60">数据状态共享</a> ：
+<a style="color:red;font-size:13px">(注意 : 跨域下使用 , 无效)</a>
 <br>
 ```
 // 使用配置 完整参数 参考列表(可自定义) 
@@ -758,12 +758,12 @@ var app = new Eng({
 <br>
 ###<a name='108'>总结：</a>
 <br>
- * Eng 学习上偏重于理解其逻辑规律 , 运用上偏重于技巧 , 可以实现所有同类工具的页面级操作 以及 数据操作 . 如果您觉的此部分功能不全 , 请开动你的大脑 , 发散思维 ,自行扩展.
- * Eng 可开发自己的组件工具库 , 
+ * Eng 学习上偏重于理解其逻辑规律 , 运用上偏重于技巧 , 可以实现所有同类工具的页面级操作 以及 数据操作 . 如果您觉的此部分功能不全 , 请发散思维 ,自行扩展.
+ * Eng 可开发通用的组件工具库 . 
 <br>
-###妄言：
+<!-- ###妄言： -->
 <br>
-```
+<!-- ```
     Eng 是去年7月份左右 , 偶然发兴于网络 , 兴起写的一个纯数据响应插件 , 时以为会有人喜欢 , 然反应寥寥 , 遂搁置不再理会 .  
 
         11月末, 贱事辞归散心三月余 . 元宵节后谋职 , 几轮筛岗 , 不胜反感! react , vue , angular 大潮席卷 , 非相关职位 , 竟莫名
@@ -784,7 +784,7 @@ var app = new Eng({
 
     (特别感谢前公司组长 , 给予我自由瞎折腾的成长的空间 ....)
     
-```
+``` -->
 </textarea>
 <!-- markdown 编辑区 End -->
         <div id='content'></div>
