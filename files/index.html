@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html>
-<head lang="zh-CN">
+<html><head lang="zh-CN">
     <meta charset="UTF-8">
     <title>eng.js官网 </title>
-    <meta name=”Description” Content="EngJs API ">
-    <meta name="keywords" content="eng,eng.js,engjs,eng.js官网,engjs API,eng api,eng官网,数据驱动,组件化数据渲染" />
+    <meta name="”Description”" content="EngJs API ">
+    <meta name="keywords" content="eng,eng.js,engjs,eng.js官网,engjs API,eng api,eng官网,数据驱动,组件化数据渲染">
     <link rel="shortcut icon" type="image/ico" href="./img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
     <script src="./js/eng_1.1.0_min.js"></script>
@@ -12,25 +11,40 @@
 <body>
     <div style="height:80px;">
            <img style="height:66px;margin-left:40px;margin-top:7px;" src="./img/favicon.ico" alt="">
-           <div id='top'>
+           <div id="top">
              <a href="https://github.com/343830384/Eng" target="_blank">GitHub</a>  
              <a href="./js/eng_1.1.0_min.js" download="eng_1.1.0_min.js">Download</a>
              <a>------ dream-canvas</a>
            </div>
     </div>
    <hr>
-<div style='display:none;'><h3 id="">简介：</h3>
-<p><br></p>
-<h1> 是一款 MVVM 模式超 轻量级的 组件化数据渲染 JS 本地插件 ， 仅有16kb 。
-但却支持 React 、 Vue 、 Angular 全家桶套餐的主要核心功能 ， 因此是这三类工具外另一种更
-轻量级的实现方式 ， 具有所有此类工具中 ， 最少 最简洁 最易的 学习曲线;</h1>
-<h1> Eng 在大多数情况下与后台 99 %解耦 ， 按照 Eng 规则封装的Eng组件 ， 具有一次编写 ， 处处部署的特点 。
-后台仅仅只需配置数据的请求接口 。 在使用本地数据的特殊情况下 ， 后台对前端工作的参与度近乎为 0 ;</h1>
-<h1>Eng 主要特性：数据驱动(多向响应) 、组件闭包通信（动态）、 组件群发循环通信 、数据状态共享（跨页面,多向控制）、
-组件require（自动按需加载js，css）、组件自请求数据、支持列表数据过滤 ，用以实现Excel数据统计计算或建立watcher关系、 组件封装方法缓存复用</h1>
-<h1>Eng 相较于同类工具：  更少更简易的指令/方法实现同样的操作 ， 没有任何组件通信障碍 ， 后台无需专门复杂的路由控制器(1个ID1个接口) ，数据状态共享仅需简短的配置， 组件是完整闭包的全功能独立运作体。</h1>
-<h1>Eng 的数据结构与dom层次划分， 互为结构视图 。 在深度开发下 ，提供异常明晰的规律逻辑思考模式 与 例推效应；</h1>
 
+
+<table id="table" width="100%">
+<tbody><tr>
+    <td>
+        <div id="left">
+            <ul id="ul">
+                
+            <li><a href="#100"><span class="lvl0">Eng 相关</span></a><ul class="cul"><li><a href="#Eng-NOS"><span>Eng-NOS</span></a></li><li><a href="#Eng-Drive"><span>Eng-Drive</span></a></li></ul></li><li><a href="#101"><span class="lvl0">版本说明</span></a><ul class="cul"></ul></li><li><a href="#102"><span class="lvl0"><small style="color:#CB2B09">须知(必看)</small></span></a><ul class="cul"></ul></li><li><a href="#103"><span class="lvl0"><small style="color:#CB2B09">基本指令</small></span></a><ul class="cul"><li><a href="#e-base"><span>e-base</span></a></li><li><a href="#e-html"><span>e-html</span></a></li><li><a href="#e-attr"><span>e-attr</span></a></li><li><a href="#e-id"><span>e-id</span></a></li><li><a href="#e-event"><span>e-event</span></a></li><li><a href="#e-input"><span>e-input</span></a></li><li><a href="#e-change"><span>e-change</span></a></li><li><a href="#e-for"><span>e-for</span></a></li></ul></li><li><a href="#104"><span class="lvl0"><small style="color:#CB2B09">参数 &amp; 方法</small></span></a><ul class="cul"><li><a href="#el"><span>el</span></a></li><li><a href="#id"><span>id</span></a></li><li><a href="#cache"><span>cache</span></a></li><li><a href="#relate"><span>relate</span></a></li><li><a href="#require"><span>require</span></a></li><li><a href="#showStage"><span>showStage</span></a></li><li><a href="#template"><span>template</span></a></li><li><a href="#data"><span>data</span></a></li><li><a href="#watcher"><span>watcher</span></a></li><li><a href="#watcherFor"><span>watcherFor</span></a></li><li><a href="#created"><span>created</span></a></li><li><a href="#$_setToSelf"><span>$_setToSelf</span></a></li><li><a href="#$_setToGlobal"><span>$_setToGlobal</span></a></li><li><a href="#ajax"><span>ajax</span></a></li></ul></li><li><a href="#105"><span class="lvl0"><small style="color:#CB2B09">items &amp; cache</small></span></a><ul class="cul"></ul></li><li><a href="#106"><span class="lvl0"><small style="color:#CB2B09">组件封装</small></span></a><ul class="cul"></ul></li><li><a href="#107"><span class="lvl0"><small style="color:#CB2B09">数据状态共享</small></span></a><ul class="cul"><li><a href="#&lt;=&gt;"><span>&lt;=&gt;</span></a></li><li><a href="#=&gt;"><span>=&gt;</span></a></li><li><a href="#="><span>=</span></a></li><li><a href="#&lt;?&gt;"><span>&lt;?&gt;</span></a></li><li><a href="#?&gt;"><span>?&gt;</span></a></li><li><a href="#?="><span>?=</span></a></li></ul></li><li><a href="#108"><span class="lvl0">结语</span></a><ul class="cul"></ul></li></ul>
+        </div>    
+    </td><!-- left END -->
+<td>
+        <div id="right" style="height: 1170px;">
+
+        <div id="content"><h3 id="">简介：</h3>
+<p><br></p>
+<ul>
+<li><p>Eng 是一款 MVVM 模式超 轻量级的 组件化数据渲染 JS 本地插件 ， 仅有16kb 。
+但却支持 React 、 Vue 、 Angular 全家桶套餐的主要核心功能 ， 因此是这三类工具外另一种更
+轻量级的实现方式 ， 具有所有此类工具中 ， 最少 最简洁 最易的 学习曲线;</p></li>
+<li><p>Eng 在大多数情况下与后台 99 %解耦 ， 按照 Eng 规则封装的Eng组件 ， 具有一次编写 ， 处处部署的特点 。
+后台仅仅只需配置数据的请求接口 。 在使用本地数据的特殊情况下 ， 后台对前端工作的参与度近乎为 0 ;</p></li>
+<li><p>Eng 主要特性：数据驱动(多向响应) 、组件闭包通信（动态）、 组件群发循环通信 、数据状态共享（跨页面,多向控制）、
+组件require（自动按需加载js，css）、组件自请求数据、支持列表数据过滤 ，用以实现Excel数据统计计算或建立watcher关系、 组件封装方法缓存复用</p></li>
+<li><p>Eng 相较于同类工具：  更少更简易的指令/方法实现同样的操作 ， 没有任何组件通信障碍 ， 后台无需专门复杂的路由控制器(1个ID1个接口) ，数据状态共享仅需简短的配置， 组件是完整闭包的全功能独立运作体。</p></li>
+<li><p>Eng 的数据结构与dom层次划分， 互为结构视图 。 在深度开发下 ，提供异常明晰的规律逻辑思考模式 与 例推效应； </p></li>
+</ul>
 <p><br></p>
 <h3 id="eng">Eng 相关：</h3>
 <p><br></p>
@@ -65,19 +79,19 @@
 <p><br></p>
 <div>
 <a class="cl"><pre><code>&lt;div&gt;
-&lt;div e-base='base'&gt;
-&lt;p&gt;{{value1}}&lt;/p&gt;
-&lt;p&gt;{{value2}}&lt;/p&gt;
-&lt;/div&gt;
+    &lt;div e-base='base'&gt;
+        &lt;p&gt;{{value1}}&lt;/p&gt;
+        &lt;p&gt;{{value2}}&lt;/p&gt;
+        &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
 </a>
 <a class="cl"><pre><code>    var  data={
-base:{
-    value1:'xxx',
-    value2:'xxxx',
-}
-};
+        base:{
+            value1:'xxx',
+            value2:'xxxx',
+        }
+    };
 </code></pre>
 </a>
 </div>
@@ -88,14 +102,14 @@ base:{
 <p><br></p>
 <div>
 <a class="cl"><pre><code>&lt;div&gt;
-&lt;div e-html='html'&gt;
-&lt;/div&gt;
+    &lt;div e-html='html'&gt;
+    &lt;/div&gt;
 &lt;/div&gt;
 </code></pre>
 </a>
 <a class="cl"><pre><code>    var  data={
-html:"&lt;p&gt;插入html文本&lt;/p&gt;"
-};
+        html:"&lt;p&gt;插入html文本&lt;/p&gt;"
+    };
 </code></pre>
 </a>
 </div>
@@ -104,20 +118,20 @@ html:"&lt;p&gt;插入html文本&lt;/p&gt;"
 <h5 id="aclassordernameeattreattra"><a class="order" name="e-attr">e-attr:</a></h5>
 <p><br></p>
 <pre><code class="javascript language-javascript">    &lt;div e-attr='class=value'&gt;
-....
-&lt;/div&gt;
+        ....
+    &lt;/div&gt;
 
-&lt;div e-attr='class=value?(css1):(css2)'&gt;
-...
-&lt;/div&gt;
+    &lt;div e-attr='class=value?(css1):(css2)'&gt;
+        ...
+    &lt;/div&gt;
 
-&lt;div e-attr='class=value2&gt;=10?(css1):(css2)'&gt;
-....
-&lt;/div&gt;
+    &lt;div e-attr='class=value2&gt;=10?(css1):(css2)'&gt;
+        ....
+    &lt;/div&gt;
 
-&lt;div e-attr='XXXX=value;title=value2;class=value3&gt;=10?(css1):(css2)'&gt;
-....
-&lt;/div&gt;
+    &lt;div e-attr='XXXX=value;title=value2;class=value3&gt;=10?(css1):(css2)'&gt;
+        ....
+    &lt;/div&gt;
 </code></pre>
 <p><a class="des">e-attr : 可以写入几乎所有行内属性 ，支持三目运算，多个表达式之间用 “；”分号分隔。</a>
 <a class="des">当前版本 表达式 中不能有多余 空格，表达式的（）内不能有其它“；”分号和（）括号</a>
@@ -125,8 +139,8 @@ html:"&lt;p&gt;插入html文本&lt;/p&gt;"
 <h5 id="aclassordernameeideida"><a class="order" name="e-id">e-id:</a></h5>
 <p><br></p>
 <pre><code>    &lt;div&gt;
-&lt;div e-id='idName'&gt; ...... &lt;/div&gt;
-&lt;/div&gt;
+        &lt;div e-id='idName'&gt; ...... &lt;/div&gt;
+    &lt;/div&gt;
 </code></pre>
 <p><a class="des">e-id : 用于获取当前dom对象 ， 组件内所有方法的itmes参数上 ，通过 items.idName 的方式获取使用 </a>
 <br></p>
@@ -134,23 +148,23 @@ html:"&lt;p&gt;插入html文本&lt;/p&gt;"
 <p><br></p>
 <div>
 <a class="cl"><pre><code>    &lt;div&gt;
-&lt;button e-event='onclick:fun'&gt;
+        &lt;button e-event='onclick:fun'&gt;
 
-    click
+            click
 
-&lt;/button&gt;
+        &lt;/button&gt;
 
-&lt;/div&gt;
+    &lt;/div&gt;
 </code></pre>
 </a>
 <a class="cl"><pre><code>    ... 
-event:{
-fun：function(){
-    alert('chlick');
-    //console.log( this.$_data, this.$_gData ,this.$_items)
-}  
-}
-... 
+    event:{
+        fun：function(){
+            alert('chlick');
+            //console.log( this.$_data, this.$_gData ,this.$_items)
+        }  
+    }
+    ... 
 </code></pre>
 </a>
 </div>
@@ -164,23 +178,23 @@ fun：function(){
 <p><br></p>
 <div>
 <a class="cl"><pre><code>    &lt;div&gt;
-    &lt;p&gt;{{value}}&lt;/p&gt;
-    &lt;input e-input='value'&gt;
-&lt;/div&gt;
+            &lt;p&gt;{{value}}&lt;/p&gt;
+            &lt;input e-input='value'&gt;
+    &lt;/div&gt;
 </code></pre>
 </a>
 <a class="cl"><pre><code>    data={
-value:'修改我试试'
+        value:'修改我试试'
 
-}   
+    }   
 </code></pre>
 </a>
 </div>
 <div>
-<div id="demo-input" class="demo-001">
-    <p>修改我试试</p>
-    <input>
-</div>
+        <div id="demo-input" class="demo-001">
+            <p>{{value}}</p>
+            <input e-input='value'>
+        </div>
 </div>
 <p><a class="des">e-input : 实时响应数据变化 ， 如关联有大量操作计算，建议用e-change</a>
 <br></p>
@@ -188,55 +202,55 @@ value:'修改我试试'
 <p><br></p>
 <div>
 <a class="cl"><pre><code>    &lt;div&gt;
-    &lt;p&gt;{{value}}&lt;/p&gt;
-    &lt;input e-change='value'&gt;
-&lt;/div&gt;&gt;
+            &lt;p&gt;{{value}}&lt;/p&gt;
+            &lt;input e-change='value'&gt;
+    &lt;/div&gt;&gt;
 </code></pre>
 </a>
 <a class="cl"><pre><code>    data={
-value:'修改我试试'
+        value:'修改我试试'
 
-}   
+    }   
 </code></pre>
 </a>
 </div>
 <div>
-<div id="demo-change" class="demo-001">
-    <p>修改我试试</p>
-    <input>
-</div>
+        <div id="demo-change" class="demo-001">
+            <p>{{value}}</p>
+            <input e-change='value'>
+        </div>
 </div>
 <p><br></p>
 <h5 id="aclassordernameeforefora"><a class="order" name="e-for">e-for:</a></h5>
 <p><br></p>
 <pre><code>    &lt;div&gt;
-&lt;div&gt;
-    &lt;p e-for='arr1'&gt;{{$_index}}___{{$_value}}&lt;/p&gt;
-&lt;/div&gt;
-&lt;div&gt;
-    &lt;div e-for='arr2'&gt;
-            &lt;p&gt;{{$_index}}___{{v}}&lt;/p&gt;
-            &lt;div&gt;
-                &lt;p e-for='arr3'&gt;{{$_index}}___{{$_value}}&lt;/p&gt;
+        &lt;div&gt;
+            &lt;p e-for='arr1'&gt;{{$_index}}___{{$_value}}&lt;/p&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;div e-for='arr2'&gt;
+                    &lt;p&gt;{{$_index}}___{{v}}&lt;/p&gt;
+                    &lt;div&gt;
+                        &lt;p e-for='arr3'&gt;{{$_index}}___{{$_value}}&lt;/p&gt;
+                    &lt;/div&gt;
             &lt;/div&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
 </code></pre>
 <p><br></p>
 <pre><code>    data={
-arr1:['a','b','c'],
-arr2:[
-        {
-        v:'arr2.v = 1',
-        arr3:[7,8,9]   
-        },
-        {
-        v:'arr2.v = 2',
-        arr3:[11,12,13]   
-        },
-]
-}
+        arr1:['a','b','c'],
+        arr2:[
+                {
+                v:'arr2.v = 1',
+                arr3:[7,8,9]   
+                },
+                {
+                v:'arr2.v = 2',
+                arr3:[11,12,13]   
+                },
+        ]
+    }
 </code></pre>
 <p><a class="des">请注意：示例中，所有的 e-for元素都被一个空 div 父标签（绝对定位）包裹了</a>
 <a class="des">e-for 的 dom 元素依赖其父元素进行定位 ， 作者认为在深度交互的dom动态组件开发中 ，
@@ -253,42 +267,42 @@ Eng 不会自动为这种数据格式做处理，再次强调：这种随性的�
 <h5 id="aclassordernameelela"><a class="order" name="el">el:</a></h5>
 <p><br></p>
 <pre><code>    var app=new Eng({
-el:    //  "idName" || document.getElementById("idName");
-.....
-})
+        el:    //  "idName" || document.getElementById("idName");
+        .....
+    })
 </code></pre>
 <p><a class="des">el ： 只接收页面 id 的 name 值 和 原生dom 对象</a>
 <br></p>
 <h5 id="aclassordernameidida"><a class="order" name="id">id:</a></h5>
 <p><br></p>
 <pre><code>    new Eng({
-el:xxx，
-id:'idName'   //唯一 ！ 组件闭包通信 ，跨页面数据状态共享的 身份识别依据 （没需求可以忽略）
-.....
-})
+        el:xxx，
+        id:'idName'   //唯一 ！ 组件闭包通信 ，跨页面数据状态共享的 身份识别依据 （没需求可以忽略）
+        .....
+    })
 </code></pre>
 <p><a class="des">id : 组件身份命名， 唯一 。 组件闭包通信 ，跨页面数据状态共享的 身份识别依据 （没需求可以忽略）</a>
 <br></p>
 <h5 id="aclassordernamecachecachea"><a class="order" name="cache">cache:</a></h5>
 <p><br></p>
 <pre><code>    new Eng({
-el:xxx，
-cache:{
-    a:xxx    // 组件 自定义变量 缓存区 , 相当于组件的 let 作用域 , 通过组件的所有items.$_cache , cache 进行访问操作  
-    b:xxx
-}
-.....
-})
+        el:xxx，
+        cache:{
+            a:xxx    // 组件 自定义变量 缓存区 , 相当于组件的 let 作用域 , 通过组件的所有items.$_cache , cache 进行访问操作  
+            b:xxx
+        }
+        .....
+    })
 </code></pre>
 <p><a class="des">组件 自定义变量 缓存区 , 相当于组件的 let 作用域 , 通过组件的所有items.$_cache , cache 进行访问操作</a>
 <br></p>
 <h5 id="aclassordernamerelaterelatea"><a class="order" name="relate">relate:</a></h5>
 <p><br></p>
 <pre><code>    new Eng({
-el:....
-id:...,
-realte:[ 'idName1' , 'idNname2' ] // Type:Array  与其它 id 的组件相关联 
-})
+        el:....
+        id:...,
+        realte:[ 'idName1' , 'idNname2' ] // Type:Array  与其它 id 的组件相关联 
+    })
 </code></pre>
 <p><a class="des">realte : ['name1','name2' ] 。 将id 名字为 name1、name2 的组件相关联 ， 无论这两个组件当前是否已经创建</a>
 <a class="des">使用方式 ：当前组件任意位置方法内的 items 参数上 ，以 items.name1 、items.name2 的方式 ，就可以访问修改这些组件的所有数据 和 操作所有的方法 ，等价于直接其它组件的 items </a>
@@ -297,12 +311,12 @@ realte:[ 'idName1' , 'idNname2' ] // Type:Array  与其它 id 的组件相关联
 <h5 id="aclassordernamerequirerequirea"><a class="order" name="require">require:</a></h5>
 <p><br></p>
 <pre><code>    new Eng({
-el:...
-require:{
-    css:['./a.css' , './b.css' , './c.css','./d.css'], // 优先加载 css
-    js:['./a.js' , './b.js' , './c.js' , './d.js']
-}
-})
+        el:...
+        require:{
+            css:['./a.css' , './b.css' , './c.css','./d.css'], // 优先加载 css
+            js:['./a.js' , './b.js' , './c.js' , './d.js']
+        }
+    })
 </code></pre>
 <p><a class="des">require : { css:[…] , js:[…] }  优先加载 css 部分， 之后 先执行 数据渲染展示 </a>
 <img src="./img/timeline.jpg"></p>
@@ -310,731 +324,6 @@ require:{
 <h5 id="aclassordernameshowstageshowstageitemscachea"><a class="order" name="showStage">showStage( items , cache):</a></h5>
 <p><br></p>
 <pre><code>    new Eng({
-el:....
-require:{
-    css:[......]
-},
-showStage:function( items , cache ){
-            //do something
-}
-})
-</code></pre>
-<p><a class="des">showStage 只有在 require 的 css 传入参数存在时 ，才会被执行 。 意思为：css 样式已加载完成 ，是否要优先做什么 ，不必等待其它js 的加载</a>
-<br></p>
-<h5 id="aclassordernametemplatetemplatea"><a class="order" name="template">template:</a></h5>
-<p><br></p>
-<pre><code>    new Eng({
-el:xxxx,
-template:"&lt;div&gt;{{value}}&lt;/div&gt;",  //html 字符串模板
-data:{
-    value:'xxx'
-}
-})
-</code></pre>
-<p><a class="des">template ：html字符串模板 ， 当template参数存在时 ，生成的组件dom 会被填充为 el 的子元素 </a>
-<br></p>
-<h5 id="aclassordernamedatadataa"><a class="order" name="data">data:</a></h5>
-<p><br></p>
-<pre><code>    new Eng({
-....
-data:{
-        //没什么好说的
-}
-})
-</code></pre>
-<p><br></p>
-<h5 id="aclassordernamewatcherwatchera"><a class="order" name="watcher">watcher:</a></h5>
-<p><br></p>
-<pre><code>    new Eng({
-el:...
-watcher:{
-        v:function(oldValue , newValue , items, cache){
-
-            &lt;!-- watcher 特有 --&gt;
-            // items.$_value
-            // items.$_destory
-            // items.$_caller
-
-            &lt;!-- items 通有  不再特别说明   参看：items &amp; cache  --&gt; 
-            // items.$_wather     // === watcher    作用一样
-            // items.$_watherFor  // === watcherFor  作用一样
-            // .......等
-        },
-        'a.v':function(oldValue , newValue , items, cache){
-            //....
-        }
-},
-data{
-    v:'xxx',
-    a:{
-        v:'xxxx'  
-    }
-}
-})
-</code></pre>
-<p><a class="des">watcher : 注册的 观察者对象 会立即执行 , items.$_watcher 注册的 观察者对象 ， 在修改数据时触发执行 </a>
-<a class="des">items.$_value ： 修改当前的输出值  items.$_value = '我要修改的值'  ，当然你也可以通过  items.$_gData.v='xxxx' 修改</a>
-<a class="des">items.$_destory ：用于内部逻辑判断自我销毁当前 watcher对象 , 使用方式 ： items.$_destory = true ; 当然你也可以在任何时候位置的 items 参数上 ，
-通过 items.$_watcher( { 'xxx' : null } ) 再次出册这个 watcher对象 为空的 方式进行销毁</a>
-<a class="des2">items.$_caller ： 主叫机制 ， 用于避免 “wach噩梦” ， 在互相 watch 通信 和 多组件关联 watch 循环watch通信时 ，避免 死循环 和  watch 双方写入 判断逻辑 。 
-当items.$_caller = true 时 ，主叫机制开启, 从底层断开 watch 进入死循环的可能 .  </a>
-<br></p>
-<h5 id="aclassordernamewatcherforwatcherfora"><a class="order" name="watcherFor">watcherFor:(重要)</a></h5>
-<p><br></p>
-<pre><code>    new Eng({
-el:....
-data:{
-    arr1:[1,2,3],
-    arr2:[
-        {
-            v:'',   
-            arr3:[7,8,9,10]   
-        }
-    ]
-},
-watcherFor:{
-        arr1:function( items ,cache){
-        //items.$_allow
-        //items.$_data
-        //items.$_gData
-        //itesm.$_forData
-        //items.$_index
-        //items.$_pos
-        //items.$_gIndex
-        //items.$_watcher
-        //items.$_gWatcher
-        //items.$_items  // 通用 items ， watcherFor里 的items是个特殊的items  
-        }
-}
-})
-</code></pre>
-<p><a class="des">watcherFor 可以实现 Excel 的函数运算 ， 如果你想深入了解的话 ， 排序功能 之后的更新增加</a>
-<a class="des2">watcherFor 在对象建立时立即执行数据过滤 , items.$_watcherFor注册后 ,修改数据时执行 , 或通过 data.array='updata' 触发 </a>
-<a class="des">Array 数据类型 ，进行push() 等等操作数据自身而无法响应的情况时 ，仅需执行  data.arrray = 'update' 即可</a>
-<a class="des">items.$_allow : &emsp;是否允许允许当前数据通过 ，默认为 true ，当修改为 false 时 该条数据不会渲染到页面 </a>
-<a class="des">items.$_data  : &emsp;&ensp;当前被循环的数组元素数据</a>
-<a class="des">items.$_gData :&emsp;组件全数据</a>
-<a class="des">itesm.$_forData : 当前被循环的数组 ，当 $_data 为非引用数据类型时 ，可根据 items.$_index 下标进行修改</a>
-<a class="des">items.$_index : &emsp;当前被循环的数组元素数据的下标</a>
-<a class="des">items.$_pos ：&emsp;&ensp;当前被循环元素的多维下标 , 在嵌套循环中使用 ，例: [1 ,2 ] 表示： 当前元素 是父元素下标为 1的元素 的 子元素的下标为2的元素 </a>
-<a class="des">items.$_gIndex : &ensp;该循环体系在整个组件的所有循环体系的位置 ，暂时忽略一般用不到  </a>
-<a class="des">items.$_watcher：基于当前base路径地址 注册 watcher ， 自动忽略前置路径 ，用于循环内部 实现 watcher 的特殊应用场景</a>
-<a class="des">items.$_gWatcher:普通 watcher方法 ，用于循环体系外的数据 与 当前数据 建立 watcher关系</a>
-<a class="des">items.$_items ：&emsp;通用属性方法的 items , 不是watcherFor 里这个特殊的 items</a>
-<br></p>
-<h5 id="aclassordernamecreatedcreateda"><a class="order" name="created">created:</a></h5>
-<p><br></p>
-<pre><code>    var app = new Eng({
-el:...
-data:....
-created:function( items , cache ){
-        // 组件生成后 ，所有的相关编程 都应当写在created内 ，
-        // 当然你非要写在这个对象外之后 ， 不遵守Eng 闭包规则 也可以
-        // 那样的话 ，操作组件的内部方法 ，你需要把items参数传递出去
-        // app 仅能修改数据
-}
-})
-</code></pre>
-<p><br></p>
-<h5 id="aclassordernamed_settoselfd_settoselfa"><a class="order" name="$_setToSelf">$_setToSelf:</a></h5>
-<p><a class="des">碎片组件，非数据响应</a>
-<br></p>
-<pre><code>    new Eng({
-el:....
-data:...
-created:function( items , cache){
-
-    var fragment =  "&lt;div&gt;&lt;p&gt; {{v}} &lt;/p&gt;&lt;/div&gt;";
-
-    var data={
-            v : "$_setToSelf 生成的碎片组件 不支持数据响应"
-        };
-    var  dom = items.$_setToSelf(data, fragment ); 
-
-        document.body.appendChild(dom);
-
-}
-})
-</code></pre>
-<p><a class="des">碎片组件模板中 ， 不支持写入 e-id 和 e-for 指令 ， 碎片本身 可以放置页面各处 </a>
-<br></p>
-<h5 id="aclassordernamed_settoglobald_settoglobala"><a class="order" name="$_setToGlobal">$_setToGlobal:</a></h5>
-<p><a class="des">碎片组件，数据响应</a>
-<br></p>
-<pre><code>var app = new Eng({
-    el:....
-    data:{
-        a:1,
-    }，
-    created:function( items , cache){
-
-    var fragment =  "&lt;div&gt;&lt;p&gt; {{v}} &lt;/p&gt;&lt;/div&gt;";  //碎片组件html字符串模板
-
-    var data={
-            v : "$_setToGlobal 生成的碎片组件 支持数据响应 "
-            };
-
-            var dom = items.$_setToGlobal({
-                        el: fragment,
-                        key: "base", // 放入组件 data 数据中的 键名 
-                        data: data,  // 碎片组件的数据
-                        base: "",    // 可忽略 ， 忽略下默认添加到根路径 
-                    });
-
-            document.body.appendChild(dom);
-
-            // 修改 app.base.v 的值 会响应到页面
-
-                console.log(app||items.$_gData); 
-                /*
-                    data:{
-                        a:1,
-                        base:{
-                            v:'$_setToGlobal 生成的碎片组件 支持数据响应'
-                        }
-                    }
-                */
-    }
-})
-</code></pre>
-<p><a class="des">碎片组件模板中 ， 不支持写入 e-id 和 e-for 指令 ， 碎片本身 可以放置页面各处 </a>
-<a class="des">base : 路径非忽略的情况下 ， 必须基于已有事实 数据路径 </a>
-<br></p>
-<h5 id="aclassordernameajaxajaxa"><a class="order" name="ajax">ajax:</a></h5>
-<p><br></p>
-<pre><code>    new Eng({
-el:....
-ajax:{
-    type:        // 可忽略 ， 默认： get
-    dataType：   // 可忽略 ， 默认： json
-    url：        // 数据接口地址
-    data：{
-        id：    //组件id  自定义的组件身份识别数据 ，这只是示范   
-    },
-    success:function(data , items){
-            items.$_addData(data);  //添加数据的方法
-    },
-    error:function(err , items){
-
-    } 
-}
-})
-</code></pre>
-<p><a class="des">Eng的  ajax 方法仅仅是个简易的ajax 数据请求方案 ， 所有参数 如示例中 。 不做强制使用限制</a>
-<a class="des">使用其它三方 ajax请求方案时 ，  示例中的  items.$_addData 是 添加数据的使用方式</a>
-<a class="des">其它时候 ,可以通过 items.$_ajax({..}) 使用</a>
-<a class="des2">暂不支持 Jsonp , 因为只是个辅助功能 </a>
-<br></p>
-<h3 id="aname105itemscachea"><a name="105">items &amp; cache ：</a></h3>
-<p><br>
-<a class="des2">items 和 cache 参数 存在于 Eng 组件的 watcher，watcherFor，created ，ajax，showStage 和 e-event绑定的Dom对象， 任何需要可做逻辑判断操作的执行方法体中</a>
-<a class="des2">items 仅在watcher，watcherFor 中有所 些微 区别 ，其它属性方法功能列表一致 </a>
-<a class="des2">items 是访问（realte）关联组件的任意门 ， 可以从任意一个组件指向另一个组件. 例:items.app1.app2.app1.app3.app1 (这些组件有相互relate的话) </a>
-<a class="des2">cache 是组件内部的let 作用域 ，用于组件方法间 逻辑判断 自定义变量的 全局访问缓存区  ，等价于 items.$_cache</a>
-<br></p>
-<h3 id="aname106a"><a name="106">组件封装 ： </a></h3>
-<p><a class="des2">组件封装是为了使用 ， 数据状态管理（跨页面）和 一次编写处处部署 的情况 而进行的封装操作</a>
-<br></p>
-<pre><code>//封装模板 ,除了命名规则 ($_ 加 id), 其余参数可自行定义
-
-$_XXXX=function(cfg){                /* $_ 加 XXXX (必须 !! 当前版本为全局函数 ,考虑到使用便利性 和 Eng闭包不用担心变量污染 )  */
-var template="";                  //组件html 文本模板  ，可忽略（外部有提供的话）
-var css="";                       //组件 css 样式文本  ，可忽略 （外部有提供的话）
-
-if(cfg.css)Eng.addStyle(css);    // 是否使用 封装内 css 样式文本
-
-    new Eng({
-        el:cfg.el,
-        id:cfg.id,
-        relate:cfg.relate,
-        require:cfg.require,
-        template:cfg.template||template,
-        data:cfg.data,
-        ajax:cfg.ajax，
-        //------ else  User-defined data  ------  
-        created:function(items , cache){
-
-            //组件 私有自定义数据编程区
-
-        }
-    });
-};
-</code></pre>
-<p><a class="des"> 审查下方 页面a,b demo源码 ,参考  </a>
-<br></p>
-<h3 id="astylecolorredname107classmt60a"><a style="color:red" name="107" class="mt60">数据状态共享</a> ：</h3>
-<p><a style="color:red;font-size:13px">(注意 : 跨域下使用 , 无效)</a>
-<br></p>
-<pre><code>// 使用配置 完整参数 参考列表(可自定义) 
-var config={
-    app:{     //app 应与封装命名 $_xxx 的xxx部分同名
-
-        el:...  ,       // 页面已有 idName 或 dom对象 ，组件生成后的填充目标
-        id：'app',      // id：的app与app应同名 ，注意命名合法性 ， 若不打算使用 relate 组件关联通信 和 数据共享 可忽略
-        relate:[],      // 与 app 关联的组件id 列表 ，无需要  可忽略
-        require:{       // 组件依赖的css 和js ， 不需要组件自行加载 时 可忽略
-            css:[],
-            js:[]
-        },
-        data:{},        //组件的本地数据或模拟数据 ， 存在时不会执行 初始化 ajax 请求 ，不需要可忽略
-        template:...,   //组件的文本模板数据 ， 若封装组件内未封装 ，则需要提供 ， 使用封装内时可忽略
-        ajax:...,       //组件 初始化 ajax请求组件数据的操作 ，不需要可忽略  
-        css：...，      //布尔值 ， 是否使用封装内的 css 样式 ，true 是使用 ，false时可忽略， 此时页面已有样式中应提供
-        cache：...      //布尔值 ， 是否缓存组件封装方法和配置 ，新的页面自动复用 ，不再向服务器请求 （当前版本关闭,开启看更新通知） 
-    },
-    app2:{
-        ....
-    },
-    .....
-
-    // 已上不打算做封装可忽略 ,参数可自定义 ,非必需  , 以下为 数据共享配置格式  ~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-    $_sharedData:{  //所有参数
-
-        '&lt;=&gt;': ['app']    //双向约束同名（id）组件全数据共享 ，id列表
-        '=&gt;' : ['app2']   //单向约束同名（id）组件全数据共享 ，id列表
-        '&lt;?&gt;': []         //双向约束任意id组件  ,共享 指定路径数据 到 指定路径 
-        '?&gt;' : []         //单向约束任意id组件  ,共享 指定路径数据 到 指定路径
-        '='  : []         //只接收同名组件id 数据 ，不对外约束 
-        '?=' : []         //只接收指定id组件的指定路径数据 ，不对外约束
-    } 
-};
-
-Eng.init(config);
-</code></pre>
-<p><br></p>
-<h5 id="aclassordernamea"><a class="order" name="<=>">&lt;=&gt; : 使用实例</a></h5>
-<p><br></p>
-<pre><code>    // a 页面 配置~~~~~~~~~~~~~~~~~~~~~
-
-var cfg={
-        app:{
-            el:document.body,
-            id:'app',
-            css:true
-        },
-        $_sharedData:{
-            '&lt;=&gt;':['app']
-        }
-};
-Eng.init(cfg); //使用方式
-
-// b 页面 配置~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-var cfg={
-        app:{
-            el:document.body,
-            id:'app',
-            css:true
-        },
-        $_sharedData:{
-            '&lt;=&gt;':['app']
-        }
-};
-Eng.init(cfg);
-</code></pre>
-<p><a class="des">打开下面的两个页面 ,你会发现 两个页面的数据无论怎么修改 , 组件的数据都是一样的 </a>
-<a class="rred" href="./demo/demo01.html" target="_blank">页面a </a>
-<br>
-<a class="rred" href="./demo/demo02.html" target="_blank">页面b</a></p>
-<p><br></p>
-<h5 id="aclassordernamea-1"><a class="order" name="=>">=&gt; 与  =  : 使用实例</a></h5>
-<p><br></p>
-<pre><code>    // a 页面 配置 
-
-'=&gt;':['app']
-
-// b 页面 配置 
-
-'=':['app']
-</code></pre>
-<p><a class="des">打开下面的两个页面 , 页面b的数据始终受到页面a 的约束 , 即使修改了, 刷新 或 切换页面后也会被还原 </a>
-<a class="rred" href="./demo/demo11.html" target="_blank">页面a</a>
-<br>
-<a class="rred" href="./demo/demo12.html" target="_blank">页面b</a></p>
-<p><br></p>
-<h5 id="aclassordernamea-2"><a class="order" name="<?>"> &lt;？&gt; : 使用实例</a></h5>
-<p><br></p>
-<pre><code>    // a 页面 配置
-
-'&lt;?&gt;':['app1.a=app2.b']   // 当前页面的  app1.a 的值, 赋予其它页面 app2.b ; app1 app2为组件id
-
-// b 页面 配置
-
-'&lt;?&gt;':['app2.b=app1.a']   // 当前页面的  app2.b 的值, 赋予其它页面 app1.a ; app2 app1为组件id
-</code></pre>
-<p><a class="des">不能有多余空格 , ['app1=app2']当前版本是非法的 ,只允许指定路径数据 赋值给 指定路径 ,不允许全复制 </a>
-<a class="des">打开下面的两个页面 , 会发现 页面a 组件的 app1.a 值 和 页面b 组件的 app2.b 值 始终相等 , 其它值不受影响  </a>
-<a class="rred" href="./demo/demo21.html" target="_blank">页面a</a>
-<br>
-<a class="rred" href="./demo/demo22.html" target="_blank">页面b</a></p>
-<p><br></p>
-<h5 id="aclassordernamea-3"><a class="order" name="?>">?&gt;  与  ?=  : 使用实例</a></h5>
-<p><br></p>
-<pre><code>    // a 页面 配置
-
-'?&gt;':['app1.a=app2.b']   // 当前页面的  app1.a 的值, 赋予其它页面 app2.b ; app1 app2为组件id
-
-// b 页面 配置
-
-'?=':['app2.b=app1.a']   // 当前页面的  app2.b 的值, 赋予其它页面 app1.a ; app2 app1为组件id
-</code></pre>
-<p><a class="des">不能有多余空格 , ['app1=app2']当前版本是非法的 ,只允许指定路径数据 赋值给 指定路径 ,不允许全复制 </a>
-<a class="des">打开下面的两个页面 , 会发现页面b 的 app2.b 的值始终受到页面a 的app1.a的值约束 , 即使修改了, 刷新 或 切换页面后也会被还原   </a>
-<a class="rred" href="./demo/demo31.html" target="_blank">页面a</a>
-<br>
-<a class="rred" href="./demo/demo32.html" target="_blank">页面b</a></p>
-<p><br></p>
-<h3 id="aname108a"><a name="108">总结：</a></h3>
-<p><br></p>
-<ul>
-<li>Eng 学习上偏重于理解其逻辑规律 , 运用上偏重于技巧 , 可以实现所有同类工具的页面级操作 以及 数据操作 . 如果您觉的此部分功能不全 , 请发散思维 ,自行扩展.</li>
-<li>Eng 可开发通用的组件工具库 . 
-<br></li>
-</ul>
-</div>
-
-<table id='table' width='100%' >
-<tr>
-    <td>
-        <div id='left'>
-            <ul id='ul'>
-                <li e-for='m'> 
-                        <a e-attr='href=a'><span class='lvl0' e-html='v'></span></a>
-                        <ul class='cul'>
-                            <li e-for='c'><a e-attr='href=a'><span>{{b}}</span></a></li>
-                        </ul>
-                </li>
-            </ul>
-        </div>    
-    </td><!-- left END -->
-<td>
-        <div id='right'>
-<!-- markdown 编辑区 START -->
-<textarea id='mtxt' style="display:none">
-###简介：
-<br>
-* Eng 是一款 MVVM 模式超 轻量级的 组件化数据渲染 JS 本地插件 ， 仅有16kb 。
-但却支持 React 、 Vue 、 Angular 全家桶套餐的主要核心功能 ， 因此是这三类工具外另一种更
-轻量级的实现方式 ， 具有所有此类工具中 ， 最少 最简洁 最易的 学习曲线;
-
-* Eng 在大多数情况下与后台 99 %解耦 ， 按照 Eng 规则封装的Eng组件 ， 具有一次编写 ， 处处部署的特点 。
-后台仅仅只需配置数据的请求接口 。 在使用本地数据的特殊情况下 ， 后台对前端工作的参与度近乎为 0 ;
-
-* Eng 主要特性：数据驱动(多向响应) 、组件闭包通信（动态）、 组件群发循环通信 、数据状态共享（跨页面,多向控制）、
-组件require（自动按需加载js，css）、组件自请求数据、支持列表数据过滤 ，用以实现Excel数据统计计算或建立watcher关系、 组件封装方法缓存复用
-
-* Eng 相较于同类工具：  更少更简易的指令/方法实现同样的操作 ， 没有任何组件通信障碍 ， 后台无需专门复杂的路由控制器(1个ID1个接口) ，数据状态共享仅需简短的配置， 组件是完整闭包的全功能独立运作体。
-* Eng 的数据结构与dom层次划分， 互为结构视图 。 在深度开发下 ，提供异常明晰的规律逻辑思考模式 与 例推效应； 
-
-<br>
-###Eng 相关：
-<br>
-* <a name='Eng-NOS' href='https://github.com/343830384/Eng-nos' target="_blank">Eng-Nos</a> ： 1.7kb兼容所有浏览器的js 组件化纯数据渲染插件 ， 初次渲染拥有世界顶尖的性能 ，仅能执行被Eng-Drive编译后的文件。
-* <a name='Eng-Drive'href='https://github.com/343830384/Eng-Drive' target="_blank">Eng-Drive</a> ： Eng组件服务端渲染工具 ，仅能渲染纯 数据指令 ，其编译文件 可被Eng-NOS在本地端执行
-
-<br>
-###版本说明：
-<br>
-* 0.8.x ： 略
-* 0.9.x ： 略
-* 1.0.0 ： (当前) , 组件方法自动缓存复用，暂时关闭 ，考虑到一些可能的极端问题 (开启 看更新通知）
-* 1.1.0 ： (当前) 已修复 IE 下数据共享不能正确工作 , 解决一些关于数据共享的兼容性问题
-
-<br>
-###<a name='102'>须知（必看）：</a>
-<br>
-* <a style="color:red;font-weight:bolder">$_</a> 开头是 Eng 的专属命名域，Eng的数据键名 和 其它自定义属性方法，在任何时候都要避免以此开头
-* {{obj.value}} 这种写法会破坏掉 Eng 的 数据与dom互为结构视图的思想，以及在深度开发下的规律逻辑思考模式 。 
-作者认为：规则规律的好处，远大于随性自由 ，因此Eng永远不会支持这种写法 ，具体参考e-base指令
-*  $_value : 仅允许输出：Number、Boolean、String 三种常量类型 ，也是基于上条原则 。 null ，undefined，NaN 数据请以String类型输出，
-若非此，默认数据为 "" 空字符串
-* Eng 组件开发施行闭包原则 ，支持闭包动态通信 ，正常开发模式下应当遵循此原则
-
-<br>
-###<a name='103'>基本指令：</a>
-<br>
-#####<a class="order" name='e-base'>e-base:(重要)</a>
-<br>
-<div>
-<a class="cl">
-```
-<div>
-    <div e-base='base'>
-        <p>{{value1}}</p>
-        <p>{{value2}}</p>
-        </div>
-</div>
-```
-</a>
-<a class="cl">
-```
-    var  data={
-        base:{
-            value1:'xxx',
-            value2:'xxxx',
-        }
-    };
-```
-</a>
-</div>
-<a class="des">{{value}} 的值是 基于 e-base 的对象 ，等价于 base.value1 ；base.value2 </a>
-<a class="des">Eng 组件数据的里的 JSON 对象都是 e-base ， 与 dom 数据结构的 父子层次设计规划 完全对应 ，互为结构视图 。 这个规则在深度开发中，会形成规律思考逻辑，并且Eng所有的组件方法使用上都运行在一个统一的规律逻辑下，处处行为一致 ，具有 例推 效应 </a>
-<br>
-#####<a class="order" name='e-html'>e-html:</a>
-<br>
-<div>
-<a class="cl">
-```
-<div>
-    <div e-html='html'>
-    </div>
-</div>
-```
-</a>
-<a class="cl">
-```
-    var  data={
-        html:"<p>插入html文本</p>"
-    };
-```
-</a>
-</div>
-<a class="des">e-html 是 dom.innnerHTML = html文本 ，对其子元素是覆盖操作，因此子元素若写有其它指令都会无效化</a>
-<br>
-#####<a class="order" name='e-attr'>e-attr:</a>
-<br>
-```javascript
-    <div e-attr='class=value'>
-        ....
-    </div>
-
-    <div e-attr='class=value?(css1):(css2)'>
-        ...
-    </div>
-
-    <div e-attr='class=value2>=10?(css1):(css2)'>
-        ....
-    </div>
-
-    <div e-attr='XXXX=value;title=value2;class=value3>=10?(css1):(css2)'>
-        ....
-    </div>
-```
-<a class="des">e-attr : 可以写入几乎所有行内属性 ，支持三目运算，多个表达式之间用 “；”分号分隔。</a>
-<a class="des">当前版本 表达式 中不能有多余 空格，表达式的（）内不能有其它“；”分号和（）括号</a>
-<br>
-#####<a class="order" name='e-id'>e-id:</a>
-<br>
-```
-    <div>
-        <div e-id='idName'> ...... </div>
-    </div>
-```
-<a class="des">e-id : 用于获取当前dom对象 ， 组件内所有方法的itmes参数上 ，通过 items.idName 的方式获取使用 </a>
-<br>
-#####<a class="order" name='e-event'>e-event:</a>
-<br>
-<div>
-<a class="cl">
-```
-    <div>
-        <button e-event='onclick:fun'>
-
-            click
-
-        </button>
-
-    </div>
-```
-</a>
-<a class="cl">
-```
-
-    ... 
-    event:{
-        fun：function(){
-            alert('chlick');
-            //console.log( this.$_data, this.$_gData ,this.$_items)
-        }  
-    }
-    ... 
-```
-</a>
-</div>
-<a class="des">e-event = "onclick:fun"  与原生js 的关系等价于 dom.onclick=fun </a>
-<a class="des">e-event 绑定的事件 Dom 对象 可以访问修改当前 base（this.$\_data）作用域 ,全局作用域（this.$\_gData）的数据 ，并可以通过（this.$_items）使用当前组件的所有方法，以及操作访问所有关联组件</a>
-<a class="des">因此e-event 是万能dom事件绑定器 ， 可以实现几乎所有dom事件 与 组件 的互动</a>
-<a class="des2">若要在碎片组件中使用 e-event 指令 , 需在碎片组件之前声明 :  items.$\_event.fun = function(){ ... }   </a>
-<a class="des">下面的e-input 和 e-change 指令就是基于此原理扩展实现</a>
-<br>
-#####<a class="order" name='e-input'>e-input:</a>
-<br>
-<div>
-<a class="cl">
-```
-    <div>
-            <p>{{value}}</p>
-            <input e-input='value'>
-    </div>
-```
-</a>
-<a class="cl">
-```
-    data={
-        value:'修改我试试'
-
-    }   
-```
-</a>
-</div>
-<div>
-        <div id='demo-input' class='demo-001'>
-            <p>{{value}}</p>
-            <input e-input='value'>
-        </div>
-</div>
-<a class="des">e-input : 实时响应数据变化 ， 如关联有大量操作计算，建议用e-change</a>
-<br>
-#####<a class="order" name='e-change'>e-change:</a>
-<br>
-<div>
-<a class="cl">
-```
-    <div>
-            <p>{{value}}</p>
-            <input e-change='value'>
-    </div>>
-```
-</a>
-<a class="cl">
-```
-    data={
-        value:'修改我试试'
-
-    }   
-```
-</a>
-</div>
-<div>
-        <div id='demo-change'class='demo-001'>
-            <p>{{value}}</p>
-            <input e-change='value'>
-        </div>
-</div>
-<br>
-#####<a class="order" name='e-for'>e-for:</a>
-<br>
-```
-    <div>
-        <div>
-            <p e-for='arr1'>{{$_index}}___{{$_value}}</p>
-        </div>
-        <div>
-            <div e-for='arr2'>
-                    <p>{{$_index}}___{{v}}</p>
-                    <div>
-                        <p e-for='arr3'>{{$_index}}___{{$_value}}</p>
-                    </div>
-            </div>
-        </div>
-    </div>
-```
-<br>
-```
-    data={
-        arr1:['a','b','c'],
-        arr2:[
-                {
-                v:'arr2.v = 1',
-                arr3:[7,8,9]   
-                },
-                {
-                v:'arr2.v = 2',
-                arr3:[11,12,13]   
-                },
-        ]
-    }
-```
-<a class="des">请注意：示例中，所有的 e-for元素都被一个空 div 父标签（绝对定位）包裹了</a>
-<a class="des">e-for 的 dom 元素依赖其父元素进行定位 ， 作者认为在深度交互的dom动态组件开发中 ，
-父元素的设计具有绝对稳定性 。 因此e-for指令中生成的 dom 元素 默认从父元素内的子元素队尾开始追加 </a>
-<a class="des">{{$\_index}} 是 e-for 指令中的 数据元素 下标 输出方式 </a>
-<a class="des">{{$\_value}} 仅能输出基本数据类型： Boolean、Number和String类型 ，undefined、null等类型请用String代替 , 否则默认输出 "" 空字符串</a>
-<a class="des">Eng 中 e-for='xxx' 也是一种特殊的 e-base='xxx' base对象 ，因此在嵌套循环中 子数据也必须为JSON对象 。
-如上 arr=[ { v:'xx',arr2=[x,x,x] } ] , 也就是说只能循环输出 基本数据类型 和 JSON 对象 ，如果一定要 arr=[ [x,x], [x,x] ] , 请自行 e-base=0，1，2 。 
-Eng 不会自动为这种数据格式做处理，再次强调：这种随性的写法 ，在深度开发中会破坏掉 Eng 的规律逻辑思考 和 例推效应 ， 因此永远不会支持这种写法。
-<a class="des">当进行 array.push() ,  array.concat()..... 等等 操作修改 数据自身 ， 却无法响应的情况时 ， 仅需 data.array= 'update' ，就可实现数据更新 ，同理： Json对象 的数据 同样有效  </a>
-<br>
-###<a name='104'>参数 & 方法：</a>
-<br>
-#####<a class="order" name='el'>el:</a>
-<br>
-```
-    var app=new Eng({
-        el:    //  "idName" || document.getElementById("idName");
-        .....
-    })
-```
-<a class="des">el ： 只接收页面 id 的 name 值 和 原生dom 对象</a>
-<br>
-#####<a class="order" name='id'>id:</a>
-<br>
-```
-    new Eng({
-        el:xxx，
-        id:'idName'   //唯一 ！ 组件闭包通信 ，跨页面数据状态共享的 身份识别依据 （没需求可以忽略）
-        .....
-    })
-```
-<a class="des">id : 组件身份命名， 唯一 。 组件闭包通信 ，跨页面数据状态共享的 身份识别依据 （没需求可以忽略）</a>
-<br>
-#####<a class="order" name='cache'>cache:</a>
-<br>
-```
-    new Eng({
-        el:xxx，
-        cache:{
-            a:xxx    // 组件 自定义变量 缓存区 , 相当于组件的 let 作用域 , 通过组件的所有items.$_cache , cache 进行访问操作  
-            b:xxx
-        }
-        .....
-    })
-```
-<a class="des">组件 自定义变量 缓存区 , 相当于组件的 let 作用域 , 通过组件的所有items.$_cache , cache 进行访问操作</a>
-<br>
-#####<a class="order" name='relate'>relate:</a>
-<br>
-```
-    new Eng({
-        el:....
-        id:...,
-        realte:[ 'idName1' , 'idNname2' ] // Type:Array  与其它 id 的组件相关联 
-    })
-```
-<a class="des">realte : ['name1','name2' ] 。 将id 名字为 name1、name2 的组件相关联 ， 无论这两个组件当前是否已经创建</a>
-<a class="des">使用方式 ：当前组件任意位置方法内的 items 参数上 ，以 items.name1 、items.name2 的方式 ，就可以访问修改这些组件的所有数据 和 操作所有的方法 ，等价于直接其它组件的 items </a>
-<a class="des">items.$\_relate 会返回当前所有已经正确关联的组件idName 列表 ， 对于 后关联的组件 ，使用时：直接 items.name 时应当判断对象是否存在 或 通过循环 items.$\_relate 关联列表  </a>
-<br>
-#####<a class="order" name='require'>require:</a>
-<br>
-```
-    new Eng({
-        el:...
-        require:{
-            css:['./a.css' , './b.css' , './c.css','./d.css'], // 优先加载 css
-            js:['./a.js' , './b.js' , './c.js' , './d.js']
-        }
-    })
-```
-<a class="des">require : { css:[...] , js:[...] }  优先加载 css 部分， 之后 先执行 数据渲染展示 </a>
-<img src="./img/timeline.jpg">
-
-<br>
-#####<a class="order" name='showStage'>showStage( items , cache):</a>
-<br>
-```
-    new Eng({
         el:....
         require:{
             css:[......]
@@ -1043,47 +332,44 @@ Eng 不会自动为这种数据格式做处理，再次强调：这种随性的�
                     //do something
         }
     })
-```
-<a class="des">showStage 只有在 require 的 css 传入参数存在时 ，才会被执行 。 意思为：css 样式已加载完成 ，是否要优先做什么 ，不必等待其它js 的加载</a>
-<br>
-#####<a class="order" name='template'>template:</a>
-<br>
-```
-    new Eng({
+</code></pre>
+<p><a class="des">showStage 只有在 require 的 css 传入参数存在时 ，才会被执行 。 意思为：css 样式已加载完成 ，是否要优先做什么 ，不必等待其它js 的加载</a>
+<br></p>
+<h5 id="aclassordernametemplatetemplatea"><a class="order" name="template">template:</a></h5>
+<p><br></p>
+<pre><code>    new Eng({
         el:xxxx,
-        template:"<div>{{value}}</div>",  //html 字符串模板
+        template:"&lt;div&gt;{{value}}&lt;/div&gt;",  //html 字符串模板
         data:{
             value:'xxx'
         }
     })
-```
-<a class="des">template ：html字符串模板 ， 当template参数存在时 ，生成的组件dom 会被填充为 el 的子元素 </a>
-<br>
-#####<a class="order" name='data'>data:</a>
-<br>
-```
-    new Eng({
+</code></pre>
+<p><a class="des">template ：html字符串模板 ， 当template参数存在时 ，生成的组件dom 会被填充为 el 的子元素 </a>
+<br></p>
+<h5 id="aclassordernamedatadataa"><a class="order" name="data">data:</a></h5>
+<p><br></p>
+<pre><code>    new Eng({
         ....
         data:{
                 //没什么好说的
         }
     })
-```
-<br>
-#####<a class="order" name='watcher'>watcher:</a>
-<br>
-```
-    new Eng({
+</code></pre>
+<p><br></p>
+<h5 id="aclassordernamewatcherwatchera"><a class="order" name="watcher">watcher:</a></h5>
+<p><br></p>
+<pre><code>    new Eng({
         el:...
         watcher:{
                 v:function(oldValue , newValue , items, cache){
-                    
-                    <!-- watcher 特有 -->
+
+                    &lt;!-- watcher 特有 --&gt;
                     // items.$_value
                     // items.$_destory
                     // items.$_caller
 
-                    <!-- items 通有  不再特别说明   参看：items & cache  --> 
+                    &lt;!-- items 通有  不再特别说明   参看：items &amp; cache  --&gt; 
                     // items.$_wather     // === watcher    作用一样
                     // items.$_watherFor  // === watcherFor  作用一样
                     // .......等
@@ -1099,18 +385,17 @@ Eng 不会自动为这种数据格式做处理，再次强调：这种随性的�
             }
         }
     })
-```
-<a class="des">watcher : 注册的 观察者对象 会立即执行 , items.$\_watcher 注册的 观察者对象 ， 在修改数据时触发执行 </a>
-<a class="des">items.$\_value ： 修改当前的输出值  items.$_value = '我要修改的值'  ，当然你也可以通过  items.$\_gData.v='xxxx' 修改</a>
-<a class="des">items.$\_destory ：用于内部逻辑判断自我销毁当前 watcher对象 , 使用方式 ： items.$\_destory = true ; 当然你也可以在任何时候位置的 items 参数上 ，
-通过 items.$\_watcher( { 'xxx' : null } ) 再次出册这个 watcher对象 为空的 方式进行销毁</a>
-<a class="des2">items.$\_caller ： 主叫机制 ， 用于避免 “wach噩梦” ， 在互相 watch 通信 和 多组件关联 watch 循环watch通信时 ，避免 死循环 和  watch 双方写入 判断逻辑 。 
-当items.$\_caller = true 时 ，主叫机制开启, 从底层断开 watch 进入死循环的可能 .  </a>
-<br>
-#####<a class="order" name='watcherFor'>watcherFor:(重要)</a>
-<br>
-```
-    new Eng({
+</code></pre>
+<p><a class="des">watcher : 注册的 观察者对象 会立即执行 , items.$_watcher 注册的 观察者对象 ， 在修改数据时触发执行 </a>
+<a class="des">items.$_value ： 修改当前的输出值  items.$_value = '我要修改的值'  ，当然你也可以通过  items.$_gData.v='xxxx' 修改</a>
+<a class="des">items.$_destory ：用于内部逻辑判断自我销毁当前 watcher对象 , 使用方式 ： items.$_destory = true ; 当然你也可以在任何时候位置的 items 参数上 ，
+通过 items.$_watcher( { 'xxx' : null } ) 再次出册这个 watcher对象 为空的 方式进行销毁</a>
+<a class="des2">items.$_caller ： 主叫机制 ， 用于避免 “wach噩梦” ， 在互相 watch 通信 和 多组件关联 watch 循环watch通信时 ，避免 死循环 和  watch 双方写入 判断逻辑 。 
+当items.$_caller = true 时 ，主叫机制开启, 从底层断开 watch 进入死循环的可能 .  </a>
+<br></p>
+<h5 id="aclassordernamewatcherforwatcherfora"><a class="order" name="watcherFor">watcherFor:(重要)</a></h5>
+<p><br></p>
+<pre><code>    new Eng({
         el:....
         data:{
             arr1:[1,2,3],
@@ -1136,25 +421,24 @@ Eng 不会自动为这种数据格式做处理，再次强调：这种随性的�
                 }
         }
     })
-```
-<a class="des">watcherFor 可以实现 Excel 的函数运算 ， 如果你想深入了解的话 ， 排序功能 之后的更新增加</a>
-<a class="des2">watcherFor 在对象建立时立即执行数据过滤 , items.$\_watcherFor注册后 ,修改数据时执行 , 或通过 data.array='updata' 触发 </a>
+</code></pre>
+<p><a class="des">watcherFor 可以实现 Excel 的函数运算 ， 如果你想深入了解的话 ， 排序功能 之后的更新增加</a>
+<a class="des2">watcherFor 在对象建立时立即执行数据过滤 , items.$_watcherFor注册后 ,修改数据时执行 , 或通过 data.array='updata' 触发 </a>
 <a class="des">Array 数据类型 ，进行push() 等等操作数据自身而无法响应的情况时 ，仅需执行  data.arrray = 'update' 即可</a>
-<a class="des">items.$\_allow : &#8195;是否允许允许当前数据通过 ，默认为 true ，当修改为 false 时 该条数据不会渲染到页面 </a>
-<a class="des">items.$\_data  : &#8195;&#8194;当前被循环的数组元素数据</a>
-<a class="des">items.$\_gData :&#8195;组件全数据</a>
-<a class="des">itesm.$\_forData : 当前被循环的数组 ，当 $\_data 为非引用数据类型时 ，可根据 items.$\_index 下标进行修改</a>
-<a class="des">items.$\_index : &#8195;当前被循环的数组元素数据的下标</a>
-<a class="des">items.$\_pos ：&#8195;&#8194;当前被循环元素的多维下标 , 在嵌套循环中使用 ，例: [1 ,2 ] 表示： 当前元素 是父元素下标为 1的元素 的 子元素的下标为2的元素 </a>
-<a class="des">items.$\_gIndex : &#8194;该循环体系在整个组件的所有循环体系的位置 ，暂时忽略一般用不到  </a>
+<a class="des">items.$_allow : &emsp;是否允许允许当前数据通过 ，默认为 true ，当修改为 false 时 该条数据不会渲染到页面 </a>
+<a class="des">items.$_data  : &emsp;&ensp;当前被循环的数组元素数据</a>
+<a class="des">items.$_gData :&emsp;组件全数据</a>
+<a class="des">itesm.$_forData : 当前被循环的数组 ，当 $_data 为非引用数据类型时 ，可根据 items.$_index 下标进行修改</a>
+<a class="des">items.$_index : &emsp;当前被循环的数组元素数据的下标</a>
+<a class="des">items.$_pos ：&emsp;&ensp;当前被循环元素的多维下标 , 在嵌套循环中使用 ，例: [1 ,2 ] 表示： 当前元素 是父元素下标为 1的元素 的 子元素的下标为2的元素 </a>
+<a class="des">items.$_gIndex : &ensp;该循环体系在整个组件的所有循环体系的位置 ，暂时忽略一般用不到  </a>
 <a class="des">items.$_watcher：基于当前base路径地址 注册 watcher ， 自动忽略前置路径 ，用于循环内部 实现 watcher 的特殊应用场景</a>
-<a class="des">items.$\_gWatcher:普通 watcher方法 ，用于循环体系外的数据 与 当前数据 建立 watcher关系</a>
-<a class="des">items.$\_items ：&#8195;通用属性方法的 items , 不是watcherFor 里这个特殊的 items</a>
-<br>
-#####<a class="order" name='created'>created:</a>
-<br>
-```
-    var app = new Eng({
+<a class="des">items.$_gWatcher:普通 watcher方法 ，用于循环体系外的数据 与 当前数据 建立 watcher关系</a>
+<a class="des">items.$_items ：&emsp;通用属性方法的 items , 不是watcherFor 里这个特殊的 items</a>
+<br></p>
+<h5 id="aclassordernamecreatedcreateda"><a class="order" name="created">created:</a></h5>
+<p><br></p>
+<pre><code>    var app = new Eng({
         el:...
         data:....
         created:function( items , cache ){
@@ -1164,43 +448,41 @@ Eng 不会自动为这种数据格式做处理，再次强调：这种随性的�
                 // app 仅能修改数据
         }
     })
-```
-<br>
-#####<a class="order" name='$_setToSelf'>$_setToSelf:</a>
-<a class="des">碎片组件，非数据响应</a>
-<br>
-```
-    new Eng({
+</code></pre>
+<p><br></p>
+<h5 id="aclassordernamed_settoselfd_settoselfa"><a class="order" name="$_setToSelf">$_setToSelf:</a></h5>
+<p><a class="des">碎片组件，非数据响应</a>
+<br></p>
+<pre><code>    new Eng({
         el:....
         data:...
         created:function( items , cache){
 
-            var fragment =  "<div><p> {{v}} </p></div>";
+            var fragment =  "&lt;div&gt;&lt;p&gt; {{v}} &lt;/p&gt;&lt;/div&gt;";
 
             var data={
                     v : "$_setToSelf 生成的碎片组件 不支持数据响应"
                 };
             var  dom = items.$_setToSelf(data, fragment ); 
-                
+
                 document.body.appendChild(dom);
 
         }
     })
-```
-<a class="des">碎片组件模板中 ， 不支持写入 e-id 和 e-for 指令 ， 碎片本身 可以放置页面各处 </a>
-<br>
-#####<a class="order" name='$_setToGlobal'>$_setToGlobal:</a>
-<a class="des">碎片组件，数据响应</a>
-<br>
-```
-var app = new Eng({
+</code></pre>
+<p><a class="des">碎片组件模板中 ， 不支持写入 e-id 和 e-for 指令 ， 碎片本身 可以放置页面各处 </a>
+<br></p>
+<h5 id="aclassordernamed_settoglobald_settoglobala"><a class="order" name="$_setToGlobal">$_setToGlobal:</a></h5>
+<p><a class="des">碎片组件，数据响应</a>
+<br></p>
+<pre><code>var app = new Eng({
             el:....
             data:{
                 a:1,
             }，
             created:function( items , cache){
 
-            var fragment =  "<div><p> {{v}} </p></div>";  //碎片组件html字符串模板
+            var fragment =  "&lt;div&gt;&lt;p&gt; {{v}} &lt;/p&gt;&lt;/div&gt;";  //碎片组件html字符串模板
 
             var data={
                     v : "$_setToGlobal 生成的碎片组件 支持数据响应 "
@@ -1212,9 +494,9 @@ var app = new Eng({
                                 data: data,  // 碎片组件的数据
                                 base: "",    // 可忽略 ， 忽略下默认添加到根路径 
                             });
-                
+
                     document.body.appendChild(dom);
-            
+
                     // 修改 app.base.v 的值 会响应到页面
 
                         console.log(app||items.$_gData); 
@@ -1228,14 +510,13 @@ var app = new Eng({
                         */
             }
     })
-```
-<a class="des">碎片组件模板中 ， 不支持写入 e-id 和 e-for 指令 ， 碎片本身 可以放置页面各处 </a>
+</code></pre>
+<p><a class="des">碎片组件模板中 ， 不支持写入 e-id 和 e-for 指令 ， 碎片本身 可以放置页面各处 </a>
 <a class="des">base : 路径非忽略的情况下 ， 必须基于已有事实 数据路径 </a>
-<br>
-#####<a class="order" name='ajax'>ajax:</a>
-<br>
-```
-    new Eng({
+<br></p>
+<h5 id="aclassordernameajaxajaxa"><a class="order" name="ajax">ajax:</a></h5>
+<p><br></p>
+<pre><code>    new Eng({
         el:....
         ajax:{
             type:        // 可忽略 ， 默认： get
@@ -1252,24 +533,23 @@ var app = new Eng({
             } 
         }
     })
-```
-<a class="des">Eng的  ajax 方法仅仅是个简易的ajax 数据请求方案 ， 所有参数 如示例中 。 不做强制使用限制</a>
+</code></pre>
+<p><a class="des">Eng的  ajax 方法仅仅是个简易的ajax 数据请求方案 ， 所有参数 如示例中 。 不做强制使用限制</a>
 <a class="des">使用其它三方 ajax请求方案时 ，  示例中的  items.$_addData 是 添加数据的使用方式</a>
-<a class="des">其它时候 ,可以通过 items.$\_ajax({..}) 使用</a>
+<a class="des">其它时候 ,可以通过 items.$_ajax({..}) 使用</a>
 <a class="des2">暂不支持 Jsonp , 因为只是个辅助功能 </a>
-<br>
-###<a name='105'>items & cache ：</a>
-<br>
+<br></p>
+<h3 id="aname105itemscachea"><a name="105">items &amp; cache ：</a></h3>
+<p><br>
 <a class="des2">items 和 cache 参数 存在于 Eng 组件的 watcher，watcherFor，created ，ajax，showStage 和 e-event绑定的Dom对象， 任何需要可做逻辑判断操作的执行方法体中</a>
 <a class="des2">items 仅在watcher，watcherFor 中有所 些微 区别 ，其它属性方法功能列表一致 </a>
 <a class="des2">items 是访问（realte）关联组件的任意门 ， 可以从任意一个组件指向另一个组件. 例:items.app1.app2.app1.app3.app1 (这些组件有相互relate的话) </a>
-<a class="des2">cache 是组件内部的let 作用域 ，用于组件方法间 逻辑判断 自定义变量的 全局访问缓存区  ，等价于 items.$\_cache</a>
-<br>
-###<a name='106'>组件封装 ： </a>
-<a class="des2">组件封装是为了使用 ， 数据状态管理（跨页面）和 一次编写处处部署 的情况 而进行的封装操作</a>
-<br>
-```
-//封装模板 ,除了命名规则 ($_ 加 id), 其余参数可自行定义
+<a class="des2">cache 是组件内部的let 作用域 ，用于组件方法间 逻辑判断 自定义变量的 全局访问缓存区  ，等价于 items.$_cache</a>
+<br></p>
+<h3 id="aname106a"><a name="106">组件封装 ： </a></h3>
+<p><a class="des2">组件封装是为了使用 ， 数据状态管理（跨页面）和 一次编写处处部署 的情况 而进行的封装操作</a>
+<br></p>
+<pre><code>//封装模板 ,除了命名规则 ($_ 加 id), 其余参数可自行定义
 
     $_XXXX=function(cfg){                /* $_ 加 XXXX (必须 !! 当前版本为全局函数 ,考虑到使用便利性 和 Eng闭包不用担心变量污染 )  */
         var template="";                  //组件html 文本模板  ，可忽略（外部有提供的话）
@@ -1287,21 +567,19 @@ var app = new Eng({
                 ajax:cfg.ajax，
                 //------ else  User-defined data  ------  
                 created:function(items , cache){
-                    
+
                     //组件 私有自定义数据编程区
 
                 }
             });
         };
-
-```
-<a class="des"> 审查下方 页面a,b demo源码 ,参考  </a>
-<br>
-###<a style="color:red" name='107' class="mt60">数据状态共享</a> ：
-<a style="color:red;font-size:13px">(注意 : 跨域下使用 , 无效)</a>
-<br>
-```
-// 使用配置 完整参数 参考列表(可自定义) 
+</code></pre>
+<p><a class="des"> 审查下方 页面a,b demo源码 ,参考  </a>
+<br></p>
+<h3 id="astylecolorredname107classmt60a"><a style="color:red" name="107" class="mt60">数据状态共享</a> ：</h3>
+<p><a style="color:red;font-size:13px">(注意 : 跨域下使用 , 无效)</a>
+<br></p>
+<pre><code>// 使用配置 完整参数 参考列表(可自定义) 
     var config={
             app:{     //app 应与封装命名 $_xxx 的xxx部分同名
 
@@ -1327,22 +605,21 @@ var app = new Eng({
 
             $_sharedData:{  //所有参数
 
-                '<=>': ['app']    //双向约束同名（id）组件全数据共享 ，id列表
-                '=>' : ['app2']   //单向约束同名（id）组件全数据共享 ，id列表
-                '<?>': []         //双向约束任意id组件  ,共享 指定路径数据 到 指定路径 
-                '?>' : []         //单向约束任意id组件  ,共享 指定路径数据 到 指定路径
+                '&lt;=&gt;': ['app']    //双向约束同名（id）组件全数据共享 ，id列表
+                '=&gt;' : ['app2']   //单向约束同名（id）组件全数据共享 ，id列表
+                '&lt;?&gt;': []         //双向约束任意id组件  ,共享 指定路径数据 到 指定路径 
+                '?&gt;' : []         //单向约束任意id组件  ,共享 指定路径数据 到 指定路径
                 '='  : []         //只接收同名组件id 数据 ，不对外约束 
                 '?=' : []         //只接收指定id组件的指定路径数据 ，不对外约束
             } 
     };
 
     Eng.init(config);
-```
-<br>
-#####<a class="order" name='<=>'><=> : 使用实例</a>
-<br>
-```
-    // a 页面 配置~~~~~~~~~~~~~~~~~~~~~
+</code></pre>
+<p><br></p>
+<h5 id="aclassordernamea"><a class="order" name="<=>">&lt;=&gt; : 使用实例</a></h5>
+<p><br></p>
+<pre><code>    // a 页面 配置~~~~~~~~~~~~~~~~~~~~~
 
         var cfg={
                 app:{
@@ -1351,7 +628,7 @@ var app = new Eng({
                     css:true
                 },
                 $_sharedData:{
-                    '<=>':['app']
+                    '&lt;=&gt;':['app']
                 }
         };
         Eng.init(cfg); //使用方式
@@ -1365,118 +642,110 @@ var app = new Eng({
                     css:true
                 },
                 $_sharedData:{
-                    '<=>':['app']
+                    '&lt;=&gt;':['app']
                 }
         };
         Eng.init(cfg);
-        
-```
-<a class="des">打开下面的两个页面 ,你会发现 两个页面的数据无论怎么修改 , 组件的数据都是一样的 </a>
-<a class='rred' href="./demo/demo01.html" target="_blank" >页面a </a>
+</code></pre>
+<p><a class="des">打开下面的两个页面 ,你会发现 两个页面的数据无论怎么修改 , 组件的数据都是一样的 </a>
+<a class="rred" href="./demo/demo01.html" target="_blank">页面a </a>
 <br>
-<a class='rred' href="./demo/demo02.html" target="_blank">页面b</a>
+<a class="rred" href="./demo/demo02.html" target="_blank">页面b</a></p>
+<p><br></p>
+<h5 id="aclassordernamea-1"><a class="order" name="=>">=&gt; 与  =  : 使用实例</a></h5>
+<p><br></p>
+<pre><code>    // a 页面 配置 
 
-<br>
-#####<a class="order" name='=>'>=> 与  =  : 使用实例</a>
-<br>
-```
-    // a 页面 配置 
-
-        '=>':['app']
+        '=&gt;':['app']
 
     // b 页面 配置 
 
         '=':['app']
-```
-<a class="des">打开下面的两个页面 , 页面b的数据始终受到页面a 的约束 , 即使修改了, 刷新 或 切换页面后也会被还原 </a>
-<a class='rred' href="./demo/demo11.html" target="_blank" >页面a</a>
+</code></pre>
+<p><a class="des">打开下面的两个页面 , 页面b的数据始终受到页面a 的约束 , 即使修改了, 刷新 或 切换页面后也会被还原 </a>
+<a class="rred" href="./demo/demo11.html" target="_blank">页面a</a>
 <br>
-<a class='rred' href="./demo/demo12.html" target="_blank">页面b</a>
+<a class="rred" href="./demo/demo12.html" target="_blank">页面b</a></p>
+<p><br></p>
+<h5 id="aclassordernamea-2"><a class="order" name="<?>"> &lt;？&gt; : 使用实例</a></h5>
+<p><br></p>
+<pre><code>    // a 页面 配置
 
-<br>
-#####<a class="order" name='<?>'> <？> : 使用实例</a>
-<br>
-```
-    // a 页面 配置
-
-        '<?>':['app1.a=app2.b']   // 当前页面的  app1.a 的值, 赋予其它页面 app2.b ; app1 app2为组件id
+        '&lt;?&gt;':['app1.a=app2.b']   // 当前页面的  app1.a 的值, 赋予其它页面 app2.b ; app1 app2为组件id
 
     // b 页面 配置
 
-        '<?>':['app2.b=app1.a']   // 当前页面的  app2.b 的值, 赋予其它页面 app1.a ; app2 app1为组件id
-```
-<a class="des">不能有多余空格 , ['app1=app2']当前版本是非法的 ,只允许指定路径数据 赋值给 指定路径 ,不允许全复制 </a>
+        '&lt;?&gt;':['app2.b=app1.a']   // 当前页面的  app2.b 的值, 赋予其它页面 app1.a ; app2 app1为组件id
+</code></pre>
+<p><a class="des">不能有多余空格 , ['app1=app2']当前版本是非法的 ,只允许指定路径数据 赋值给 指定路径 ,不允许全复制 </a>
 <a class="des">打开下面的两个页面 , 会发现 页面a 组件的 app1.a 值 和 页面b 组件的 app2.b 值 始终相等 , 其它值不受影响  </a>
-<a class='rred' href="./demo/demo21.html" target="_blank" >页面a</a>
+<a class="rred" href="./demo/demo21.html" target="_blank">页面a</a>
 <br>
-<a class='rred' href="./demo/demo22.html" target="_blank">页面b</a>
+<a class="rred" href="./demo/demo22.html" target="_blank">页面b</a></p>
+<p><br></p>
+<h5 id="aclassordernamea-3"><a class="order" name="?>">?&gt;  与  ?=  : 使用实例</a></h5>
+<p><br></p>
+<pre><code>    // a 页面 配置
 
-<br>
-#####<a class="order" name='?>'>?>  与  ?=  : 使用实例</a>
-<br>
-```
-    // a 页面 配置
-
-        '?>':['app1.a=app2.b']   // 当前页面的  app1.a 的值, 赋予其它页面 app2.b ; app1 app2为组件id
+        '?&gt;':['app1.a=app2.b']   // 当前页面的  app1.a 的值, 赋予其它页面 app2.b ; app1 app2为组件id
 
     // b 页面 配置
 
         '?=':['app2.b=app1.a']   // 当前页面的  app2.b 的值, 赋予其它页面 app1.a ; app2 app1为组件id
-```
-<a class="des">不能有多余空格 , ['app1=app2']当前版本是非法的 ,只允许指定路径数据 赋值给 指定路径 ,不允许全复制 </a>
+</code></pre>
+<p><a class="des">不能有多余空格 , ['app1=app2']当前版本是非法的 ,只允许指定路径数据 赋值给 指定路径 ,不允许全复制 </a>
 <a class="des">打开下面的两个页面 , 会发现页面b 的 app2.b 的值始终受到页面a 的app1.a的值约束 , 即使修改了, 刷新 或 切换页面后也会被还原   </a>
-<a class='rred' href="./demo/demo31.html" target="_blank" >页面a</a>
+<a class="rred" href="./demo/demo31.html" target="_blank">页面a</a>
 <br>
-<a class='rred' href="./demo/demo32.html" target="_blank">页面b</a>
-
-<br>
-###<a name='108'>总结：</a>
-<br>
- * Eng 学习上偏重于理解其逻辑规律 , 运用上偏重于技巧 , 可以实现所有同类工具的页面级操作 以及 数据操作 . 如果您觉的此部分功能不全 , 请发散思维 ,自行扩展.
- * Eng 可开发通用的组件工具库 . 
-<br>
+<a class="rred" href="./demo/demo32.html" target="_blank">页面b</a></p>
+<p><br></p>
+<h3 id="aname108a"><a name="108">总结：</a></h3>
+<p><br></p>
+<ul>
+<li>Eng 学习上偏重于理解其逻辑规律 , 运用上偏重于技巧 , 可以实现所有同类工具的页面级操作 以及 数据操作 . 如果您觉的此部分功能不全 , 请发散思维 ,自行扩展.</li>
+<li>Eng 可开发通用的组件工具库 . 
+<br></li>
+</ul>
 <!-- ###妄言： -->
-<br>
+<p><br></p>
 <!-- ```
     Eng 是去年7月份左右 , 偶然发兴于网络 , 兴起写的一个纯数据响应插件 , 时以为会有人喜欢 , 然反应寥寥 , 遂搁置不再理会 .  
 
         11月末, 贱事辞归散心三月余 . 元宵节后谋职 , 几轮筛岗 , 不胜反感! react , vue , angular 大潮席卷 , 非相关职位 , 竟莫名
     突生枝节 . 犹如 java 万事万物皆可对象的戏言  ,  万事万物皆需 react , vue . 你若不这么做遍蹭不上行业热度 , 你若张口闭口不谈,
     便是行业的lower . 你若本来可以 1+1=2  , 不套用此类工具变成 1*999/3*3/3*3/3/3/3%2+1=2 , 便是不会写代码似的...
-      
+
         搞什么鬼 ! 不否认确实某些方面有其优势 , 但学 '万事万物皆可XX' !!?? 
 
         这类工具核心实现 , 不过小鸡啄米 , 信手拈来 , 以一个生产工具来 衡量、限制、套牢个人的能力 ,令人发指 , 而且并不认为此类工具
     的 部分 实现有何值得称道的 .  为一些鸡毛蒜皮的小问题 , 去强行学习套用一大堆莫名奇妙的东西 , 本末倒置的行为至少我不能理解...
-    
+
         当然不可否认此类工具背后的宣传推广力量 , 挟天下而号令码农, 指鹿为马的能力功不可没.
 
         况且!此类东西, 有点心得的 前端从业者花点功夫都能写的出来 , Eng不见得是多高明的实现 , 已经出现的此类工具也不外如是 . 
     遂决定补足Eng 对其它工具全家桶核心功能支持的短板 , 并使之简易轻量话.  
-    
+
     妄人拙作 , 还请恳评...
 
     (特别感谢前公司组长 , 给予我自由瞎折腾的成长的空间 ....)
-    
-``` -->
-</textarea>
-<!-- markdown 编辑区 End -->
-        <div id='content'></div>
+
+``` --></div>
      </div> <!-- right End -->  
  </td>
 </tr>
-</table>
+</tbody></table>
 
 
-<iframe src="./api.html" id='test' ></iframe>
-<div id='click'>点击尝试</div>
- <div id='ft'>
+<iframe src="./api.html" id="test"></iframe>
+<div id="click">点击尝试</div>
+ <div id="ft">
    <div>
-   <img src="http://www.beian.gov.cn/img/ghs.png" alt="备案标识"/>
-    <a rel="nofollow"target="_blank"  href="http://www.miitbeian.gov.cn/">蒙ICP备18001225号</a>
+   <img src="http://www.beian.gov.cn/img/ghs.png" alt="备案标识">
+    <a rel="nofollow" target="_blank" href="http://www.miitbeian.gov.cn/">蒙ICP备18001225号</a>
    </div>
  </div>
-</body>
-</html>
-<script src="https://cdn.bootcss.com/showdown/1.8.6/showdown.min.js"></script>
+
+
+<!-- <script src="https://cdn.bootcss.com/showdown/1.8.6/showdown.min.js"></script> -->
 <script src="./js/index.js"></script>
+</body></html>
