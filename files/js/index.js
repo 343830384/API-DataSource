@@ -54,12 +54,12 @@
    document.getElementById('right').offsetHeight=document.getElementById('ul').offsetHeight;
    var  h=listUl.scrollHeight;
         document.getElementById('right').style.height=h+'px';
-   
-        var mtxt=document.getElementById('mtxt').value;
-        var converter = new showdown.Converter();
-        var  html = converter.makeHtml(mtxt);
-             document.getElementById('content').innerHTML=html;
-
+        if(document.getElementById('mtxt')){
+            var mtxt=document.getElementById('mtxt').value;
+            var converter = new showdown.Converter();
+            var  html = converter.makeHtml(mtxt);
+                document.getElementById('content').innerHTML=html;
+        };
         new Eng({
             el:'demo-input',
             data:{
